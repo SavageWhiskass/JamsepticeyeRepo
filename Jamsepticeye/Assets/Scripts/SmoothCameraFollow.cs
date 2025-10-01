@@ -10,7 +10,7 @@ public class SmoothCameraFollow : MonoBehaviour
     
     Vector3 velocity; 
 
-    private void Update ()
+    private void FixedUpdate ()
     {
         transform.position = Vector3.SmoothDamp(
             transform.position,
