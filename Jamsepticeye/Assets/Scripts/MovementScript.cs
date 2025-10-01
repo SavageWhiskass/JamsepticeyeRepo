@@ -13,6 +13,8 @@ public class MovementScript : MonoBehaviour
     Rigidbody2D rb;
     public float jumpPower = 4f;
     bool isJumping = false;
+
+    public CoinManager cm; 
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +47,7 @@ public class MovementScript : MonoBehaviour
             isFacingRight = !isFacingRight;
             Vector3 ls = transform.localScale;
             ls.x *= -1f;
-            transform.localScale = ls; 
+            transform.localScale = ls;
         }
 
     }
@@ -55,6 +57,16 @@ public class MovementScript : MonoBehaviour
         isJumping = false;
     }
 
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Collectable"))
+        {
+            Destroy(collision.gameObject);
+            cm.coincount++; 
+
+        }
+    }
 
 
 }
