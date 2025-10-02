@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -21,8 +20,7 @@ public class MovementScript : MonoBehaviour
     
 
     public CoinManager cm; 
-    
-        // Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,26 +29,22 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PauseController.IsGamePaused)
-        {
-            rb.velocity = Vector2.zero;  //stop moving
-        }
 
         horizontalInput = Input.GetAxis("Horizontal");
         Flipsprite();
-        if (jumpsRemaining > 0)
-        {
+        
+        
 
 
 
-            if (Input.GetKeyDown("Space") && !isJumping)
+            if (Input("Jump") && !isJumping)
             {
 
                 rb.velocity = new Vector2(rb.velocity.x, jumpPower);
                 isJumping = true;
 
             }
-        }
+        
     }
 
 
@@ -68,15 +62,12 @@ public class MovementScript : MonoBehaviour
         }
         else if (horizontalInput > 0.1f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.GetComponent<SpriteRenderer>().flipX = false; 
         }
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        isJumping = false;
-    }
+   
 
 
     void OnTriggerEnter2D(Collider2D collision)
