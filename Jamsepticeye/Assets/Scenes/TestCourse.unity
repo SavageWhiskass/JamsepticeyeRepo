@@ -2008,6 +2008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5955435256804346909, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+      propertyPath: maxJumps
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6342947013342698371, guid: 3775713dd5463614e93e9791784dde12, type: 3}
       propertyPath: healthManager
       value: 
