@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Assertions.Must;
 
 public class MovementScript : MonoBehaviour
@@ -19,6 +20,9 @@ public class MovementScript : MonoBehaviour
      public int maxJumps = 2;
      int remainingJumps; 
     bool isGrounded = true;
+
+    private float coyoteTime = 0.2f;
+    private float coyoteTimeCounter;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,15 +37,25 @@ public class MovementScript : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         Flipsprite();
 
+        if (isGrounded)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter = Time.deltaTime; 
+        }
 
 
-        if (Input.GetButtonDown("Jump") && remainingJumps > 0)
+
+        if (coyoteTimeCounter > 0f && Input.GetButtonDown("Jump") && remainingJumps > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
 
             remainingJumps--;
-            isGrounded = false; 
-            
+            isGrounded = false;
+            coyoteTimeCounter = 0f;
+
         }
         
         
@@ -70,7 +84,7 @@ public class MovementScript : MonoBehaviour
         rb.velocity = new Vector2(horizontalInput * movespeed, rb.velocity.y);
     }
 
-    void Flipsprite()
+    public void Flipsprite()
     {
         print(horizontalInput);
         if (horizontalInput < -1.0f)
