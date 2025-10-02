@@ -8,11 +8,13 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
     float horizontalInput;
-    public float movespeed = 5f;
+    public float movespeed;
     Rigidbody2D rb;
-    public float jumpPower = 4f;
+    public float jumpPower;
     bool jumpEnabled = true;
     bool holdingJump = false;
+    public int maxJumps;
+    int jumpsLeft;
     float jumpCooldown = 0;
     public Vector2 boxSize;
     public float castDistance;
@@ -21,6 +23,8 @@ public class MovementScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        maxJumps = 1;
+        jumpsLeft = maxJumps;
     }
 
     void Update()
@@ -49,10 +53,11 @@ public class MovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(jumpEnabled && holdingJump && isGrounded() && jumpCooldown < 0.01f)
+        if(jumpEnabled && holdingJump && (isGrounded() || jumpsLeft > 0) && jumpCooldown < 0.01f)
         {
             rb.velocity = new Vector2(horizontalInput * movespeed, jumpPower);
             jumpEnabled = false;
+            --jumpsLeft;
         }
         else if(!holdingJump && !isGrounded() && rb.velocity.y > 0.1f)
         {
@@ -93,6 +98,7 @@ public class MovementScript : MonoBehaviour
         if (isGrounded())
         {
             jumpCooldown = 0.1f;
+            jumpsLeft = maxJumps;
         }
     }
 }
