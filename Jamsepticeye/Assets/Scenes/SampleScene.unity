@@ -647,6 +647,10 @@ PrefabInstance:
       propertyPath: hp
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7793852917054886471, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 406708813}
     - target: {fileID: 8235270837075712441, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
       propertyPath: m_Name
       value: Enemy
