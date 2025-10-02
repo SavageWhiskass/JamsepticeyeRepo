@@ -9,7 +9,7 @@ public class MovementScript : MonoBehaviour
 {
     float horizontalInput;
     public float movespeed = 5f;
-    bool isFacingRight = false;
+    
     Rigidbody2D rb;
     public float jumpPower = 4f;
     bool isJumping = false;
@@ -40,12 +40,14 @@ public class MovementScript : MonoBehaviour
 
     void Flipsprite()
     {
-        if (isFacingRight && horizontalInput < 0f || isFacingRight && horizontalInput > 0f)
+        print(horizontalInput);
+        if (horizontalInput < -1.0f)
         {
-            isFacingRight = !isFacingRight;
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls; 
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (horizontalInput > 1.0f)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
     }
