@@ -9,33 +9,61 @@ public class MovementScript : MonoBehaviour
 {
     float horizontalInput;
     public float movespeed = 5f;
-    bool isFacingRight = false;
     Rigidbody2D rb;
     public float jumpPower = 4f;
-    bool isJumping = false;
-    // Start is called before the first frame update
+    bool jumpEnabled = true;
+    bool holdingJump = false;
+    bool hasDoubleJump = false;
+    bool hasWallJump = false;
+    float jumpCooldown = 0;
+    public Vector2 boxSize;
+    public float castDistance;
+    public LayerMask ground;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-
+        //Get left/right input and flip
         horizontalInput = Input.GetAxis("Horizontal");
         Flipsprite();
 
-        if (Input.GetButtonDown("Jump") && !isJumping)
+        //Get jumping input
+        if(Input.GetButtonDown("Jump") || Input.GetButton("Jump"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-            isJumping = true;
+            holdingJump = true;
+        }
+        else
+        {
+            holdingJump = false;
+            jumpEnabled = true;
+        }
+
+        //Jump cooldown
+        if(jumpCooldown > 0)
+        {
+            jumpCooldown -= Time.deltaTime;
         }
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontalInput * movespeed, rb.velocity.y);
+        if(jumpEnabled && holdingJump && isGrounded() && jumpCooldown < 0.01f)
+        {
+            rb.velocity = new Vector2(horizontalInput * movespeed, jumpPower);
+            jumpEnabled = false;
+        }
+        else if(!holdingJump && !isGrounded() && rb.velocity.y > 0.1f)
+        {
+            rb.velocity = new Vector2(horizontalInput * movespeed, 0);
+        }
+        else
+        {
+            rb.velocity = new Vector2(horizontalInput * movespeed, rb.velocity.y);
+        }
     }
 
     void Flipsprite()
@@ -50,12 +78,24 @@ public class MovementScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public bool isGrounded()
     {
-        isJumping = false;
+        if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, ground))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
-
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isGrounded())
+        {
+            jumpCooldown = 0.1f;
+        }
+    }
 }
 

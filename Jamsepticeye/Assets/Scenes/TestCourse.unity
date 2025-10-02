@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 25633623}
   - component: {fileID: 25633622}
   - component: {fileID: 25633621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 205562825}
   - component: {fileID: 205562824}
   - component: {fileID: 205562823}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,8 +449,8 @@ GameObject:
   - component: {fileID: 406708813}
   - component: {fileID: 406708812}
   - component: {fileID: 406708811}
-  - component: {fileID: 406708810}
   - component: {fileID: 406708814}
+  - component: {fileID: 406708810}
   - component: {fileID: 406708815}
   m_Layer: 0
   m_Name: Player
@@ -471,8 +471,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ab21dca00c57e42ab57f1cae15dffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 5
-  jumpPower: 4
+  movespeed: 7
+  jumpPower: 12
+  boxSize: {x: 0.74, y: 0.14}
+  castDistance: 0.83
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!50 &406708811
 Rigidbody2D:
   serializedVersion: 4
@@ -487,8 +492,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: fed63117e4f2cd44398f1604a998ebba, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -499,7 +504,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &406708812
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -600,7 +605,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.024879694, y: 0.06219971}
+  m_Offset: {x: 0.05214858, y: 0.027139664}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -611,7 +616,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2985578, y: 2.1444724}
+  m_Size: {x: 1.1193624, y: 2.0743527}
   m_EdgeRadius: 0
 --- !u!114 &406708815
 MonoBehaviour:
@@ -849,7 +854,7 @@ GameObject:
   - component: {fileID: 1394585907}
   - component: {fileID: 1394585906}
   - component: {fileID: 1394585905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -979,7 +984,7 @@ GameObject:
   - component: {fileID: 1465206799}
   - component: {fileID: 1465206798}
   - component: {fileID: 1465206797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,7 +1383,7 @@ GameObject:
   - component: {fileID: 1799008899}
   - component: {fileID: 1799008898}
   - component: {fileID: 1799008897}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1765,7 +1770,7 @@ GameObject:
   - component: {fileID: 1862027232}
   - component: {fileID: 1862027231}
   - component: {fileID: 1862027230}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2054,7 +2059,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &1943397139
 RectTransform:
@@ -2168,7 +2173,7 @@ GameObject:
   - component: {fileID: 2079983573}
   - component: {fileID: 2079983572}
   - component: {fileID: 2079983571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
