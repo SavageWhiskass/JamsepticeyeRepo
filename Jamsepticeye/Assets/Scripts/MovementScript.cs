@@ -10,10 +10,15 @@ public class MovementScript : MonoBehaviour
 {
     float horizontalInput;
     public float movespeed = 5f;
-    bool isFacingRight = false;
+    
     Rigidbody2D rb;
     public float jumpPower = 4f;
     bool isJumping = false;
+    private bool doubleJump;
+    public LayerMask groundLayer;
+    public int maxJumps = 2;
+    int jumpsRemaining;
+    
 
     public CoinManager cm; 
     
@@ -28,18 +33,26 @@ public class MovementScript : MonoBehaviour
     {
         if (PauseController.IsGamePaused)
         {
-            rb.velocity = Vector2.zero; //stop moving
+            rb.velocity = Vector2.zero;  //stop moving
         }
 
         horizontalInput = Input.GetAxis("Horizontal");
         Flipsprite();
-
-        if (Input.GetButtonDown("Jump") && !isJumping)
+        if (jumpsRemaining > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-            isJumping = true;
+
+
+
+            if (Input.GetKeyDown("Space") && !isJumping)
+            {
+
+                rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+                isJumping = true;
+
+            }
         }
     }
+
 
     private void FixedUpdate()
     {
@@ -48,12 +61,14 @@ public class MovementScript : MonoBehaviour
 
     void Flipsprite()
     {
-        if (isFacingRight && horizontalInput < 0f || isFacingRight && horizontalInput > 0f)
+        print(horizontalInput);
+        if (horizontalInput < -0.1f)
         {
-            isFacingRight = !isFacingRight;
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (horizontalInput > 0.1f)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
     }
