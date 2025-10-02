@@ -4,34 +4,66 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class MovementScript : MonoBehaviour
 {
     float horizontalInput;
     public float movespeed = 5f;
-    bool isFacingRight = false;
+    
+    
     Rigidbody2D rb;
     public float jumpPower = 4f;
-    bool isJumping = false;
+    bool isJumping => rb.velocity.y > 0.1f;
+    bool isFalling => rb.velocity.y < -0.1f;
+     public int maxJumps = 2;
+     int remainingJumps; 
+    bool isGrounded = true;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        remainingJumps = maxJumps;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxisRaw("Horizontal");
         Flipsprite();
 
-        if (Input.GetButtonDown("Jump") && !isJumping)
+
+
+        if (Input.GetButtonDown("Jump") && remainingJumps > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-            isJumping = true;
+
+            remainingJumps--;
+            isGrounded = false; 
+            
         }
+        
+        
+        
+
+        
+            
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            
+            remainingJumps = maxJumps;
+
+        }
+
+        
+    }
+   
+
 
     private void FixedUpdate()
     {
@@ -40,20 +72,20 @@ public class MovementScript : MonoBehaviour
 
     void Flipsprite()
     {
-        if (isFacingRight && horizontalInput < 0f || isFacingRight && horizontalInput > 0f)
+        print(horizontalInput);
+        if (horizontalInput < -1.0f)
         {
-            isFacingRight = !isFacingRight;
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls; 
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (horizontalInput > 1.0f)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        isJumping = false;
-    }
+    
+    
 
 
 
