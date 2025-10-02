@@ -473,6 +473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 7
   jumpPower: 12
+  maxJumps: 0
   boxSize: {x: 0.74, y: 0.14}
   castDistance: 0.83
   ground:
