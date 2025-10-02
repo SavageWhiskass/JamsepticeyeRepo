@@ -13,8 +13,6 @@ public class MovementScript : MonoBehaviour
     public float jumpPower = 4f;
     bool jumpEnabled = true;
     bool holdingJump = false;
-    bool hasDoubleJump = false;
-    bool hasWallJump = false;
     float jumpCooldown = 0;
     public Vector2 boxSize;
     public float castDistance;
