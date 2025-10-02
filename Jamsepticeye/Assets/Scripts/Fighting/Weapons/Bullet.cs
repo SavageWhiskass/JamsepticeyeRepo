@@ -26,8 +26,10 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.gameObject.CompareTag("Bullet"))
+        Debug.Log("huh?");
+        if (collision.gameObject.CompareTag("Enemy"))
         {
+            collision.gameObject.GetComponent<BasicEnemy>().TakeDamage(1);
             Destroy(gameObject);
         }
     }
