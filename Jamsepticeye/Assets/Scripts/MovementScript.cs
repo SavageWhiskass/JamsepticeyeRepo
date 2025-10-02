@@ -11,6 +11,7 @@ public class MovementScript : MonoBehaviour
     public float movespeed;
     Rigidbody2D rb;
     public float jumpPower;
+    bool isGrounded = false;
     bool jumpEnabled = true;
     bool holdingJump = false;
     public int maxJumps;
@@ -29,6 +30,9 @@ public class MovementScript : MonoBehaviour
 
     void Update()
     {
+        //Check ground
+        isGrounded = GroundCheck();
+
         //Get left/right input and flip
         horizontalInput = Input.GetAxis("Horizontal");
         Flipsprite();
@@ -53,15 +57,15 @@ public class MovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(jumpEnabled && holdingJump && (isGrounded() || jumpsLeft > 0) && jumpCooldown < 0.01f)
+        if(jumpEnabled && holdingJump && (isGrounded || jumpsLeft > 0) && jumpCooldown < 0.01f)
         {
             rb.velocity = new Vector2(horizontalInput * movespeed, jumpPower);
             jumpEnabled = false;
             --jumpsLeft;
         }
-        else if(!holdingJump && !isGrounded() && rb.velocity.y > 0.1f)
+        else if(!holdingJump && !isGrounded && rb.velocity.y > 0)
         {
-            rb.velocity = new Vector2(horizontalInput * movespeed, 0);
+            rb.velocity = new Vector2(horizontalInput * movespeed, rb.velocity.y / 2);
         }
         else
         {
@@ -81,24 +85,21 @@ public class MovementScript : MonoBehaviour
         }
     }
 
-    public bool isGrounded()
+    public bool GroundCheck()
     {
         if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, ground))
         {
+            if (!isGrounded)
+            {
+                jumpCooldown = 0.12f;
+                jumpsLeft = maxJumps;
+            }
+
             return true;
         }
         else
         {
             return false;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (isGrounded())
-        {
-            jumpCooldown = 0.1f;
-            jumpsLeft = maxJumps;
         }
     }
 }
