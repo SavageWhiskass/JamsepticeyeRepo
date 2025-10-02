@@ -178,6 +178,7 @@ MonoBehaviour:
   - {fileID: 1499335995}
   - {fileID: 1677238623}
   player: {fileID: 406708809}
+  SceneBuildIndex: 1
 --- !u!1 &406708809
 GameObject:
   m_ObjectHideFlags: 0
