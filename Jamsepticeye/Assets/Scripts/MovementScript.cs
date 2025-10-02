@@ -40,14 +40,14 @@ public class MovementScript : MonoBehaviour
 
     void Flipsprite()
     {
-        if (isFacingRight && horizontalInput < 0f || isFacingRight && horizontalInput > 0f)
+        if(horizontalInput < -0.01f)
         {
-            isFacingRight = !isFacingRight;
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls; 
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
-
+        else if(horizontalInput > 0.01f)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
