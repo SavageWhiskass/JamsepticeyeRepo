@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -15,7 +16,8 @@ public class MovementScript : MonoBehaviour
     bool isJumping = false;
 
     public CoinManager cm; 
-    // Start is called before the first frame update
+    
+        // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -24,6 +26,10 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseController.IsGamePaused)
+        {
+            rb.velocity = Vector2.zero; //stop moving
+        }
 
         horizontalInput = Input.GetAxis("Horizontal");
         Flipsprite();
