@@ -4,34 +4,66 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class MovementScript : MonoBehaviour
 {
     float horizontalInput;
     public float movespeed = 5f;
     
+    
     Rigidbody2D rb;
     public float jumpPower = 4f;
-    bool isJumping = false;
+    bool isJumping => rb.velocity.y > 0.1f;
+    bool isFalling => rb.velocity.y < -0.1f;
+     public int maxJumps = 2;
+     int remainingJumps; 
+    bool isGrounded = true;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        remainingJumps = maxJumps;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxisRaw("Horizontal");
         Flipsprite();
 
-        if (Input.GetButtonDown("Jump") && !isJumping)
+
+
+        if (Input.GetButtonDown("Jump") && remainingJumps > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-            isJumping = true;
+
+            remainingJumps--;
+            isGrounded = false; 
+            
         }
+        
+        
+        
+
+        
+            
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            
+            remainingJumps = maxJumps;
+
+        }
+
+        
+    }
+   
+
 
     private void FixedUpdate()
     {
@@ -52,10 +84,8 @@ public class MovementScript : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        isJumping = false;
-    }
+    
+    
 
 
 
