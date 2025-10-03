@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class BasicEnemy : MonoBehaviour
+public class BasicEnemy : Enemy
 {
-    [SerializeField] private int hp = 10;
     [SerializeField] private float speed = 2f;
 
     private Rigidbody2D rb;
@@ -26,14 +25,6 @@ public class BasicEnemy : MonoBehaviour
 
     void Update()
     {
-        if (hp < 1)
-        {
-            Destroy(gameObject);
-        }
-    }
 
-    public void TakeDamage(int damage)
-    {
-        hp -= damage;
     }
 }
