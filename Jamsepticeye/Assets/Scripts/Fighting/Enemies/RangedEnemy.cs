@@ -16,7 +16,7 @@ public class RangedEnemy : Enemy
 
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void FixedUpdate()
