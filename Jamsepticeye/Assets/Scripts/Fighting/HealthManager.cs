@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class HealthManager : MonoBehaviour
     int currentHealth = 3;
     public GameObject[] hearts;
     public GameObject player;
+
+    public int SceneBuildIndex;
+
 
     public void ReduceCurrentHealth(int amount)
     {
@@ -70,9 +74,8 @@ public class HealthManager : MonoBehaviour
     {
         if(currentHealth == 0)
         {
-            player.GetComponent<Rigidbody2D>().freezeRotation = true;
-            player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            //Play death animation and open Game Over screen
+            print("Switching scene to " + SceneBuildIndex);
+            SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
         }
     }
 }
