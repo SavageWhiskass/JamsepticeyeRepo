@@ -6,6 +6,7 @@ public class BasicEnemy : Enemy
 
     private Rigidbody2D rb;
     [SerializeField] private Transform player;
+    [SerializeField] private float range = 2f;
 
     void Awake()
     {
@@ -20,9 +21,10 @@ public class BasicEnemy : Enemy
     void FixedUpdate()
     {
         float distance = Vector3.Distance(player.position, transform.position);
+        
         Vector3 direction = (player.position - transform.position).normalized;
         transform.position += direction * speed * Time.deltaTime;
-        if (distance > 2f)
+        if (distance > range)
         {
             //attack
         }

@@ -12,7 +12,14 @@ public class RangedEnemy : Enemy
     float fireCooldown;
     void Awake()
     {
-
+        rb = GetComponent<Rigidbody2D>();
+        if (rb)
+        {
+            rb.gravityScale = 0f;
+            rb.freezeRotation = true;
+            rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
+            rb.drag = 1f;
+        }
     }
 
     void Start()
@@ -23,15 +30,13 @@ public class RangedEnemy : Enemy
     void FixedUpdate()
     {
         float distance = Vector3.Distance(player.position, transform.position);
+
         if (distance > range)
         {
             Vector3 direction = (player.position - transform.position).normalized;
-            transform.position += direction * Mathf.Min(speed * Time.fixedDeltaTime, distance - range);
-        }
-        if(distance > range * 2)
-        {
-            Vector3 direction = (player.position - transform.position).normalized;
-            transform.position += direction * speed * 2 * Time.fixedDeltaTime;
+            float step = speed * Time.fixedDeltaTime;
+            float maxStep = distance - range;
+            transform.position += direction * Mathf.Min(step, maxStep);
         }
     }
 
