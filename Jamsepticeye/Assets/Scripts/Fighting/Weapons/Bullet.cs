@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 10f;
     public float lifetime = 5f;
-
+    public bool player_bullet;
     private Rigidbody2D rb;
 
     void Awake()
@@ -24,12 +24,31 @@ public class Bullet : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void Initialize(bool friendly)
     {
-        Debug.Log("huh?");
-        if (collision.gameObject.CompareTag("Enemy"))
+        player_bullet = friendly;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (player_bullet)
         {
-            collision.gameObject.GetComponent<BasicEnemy>().TakeDamage(1);
+            if (collision.gameObject.CompareTag("Enemy"))
+            {
+                collision.gameObject.GetComponent<Enemy>().TakeDamage(1);
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                //collision.gameObject.GetComponent<BasicEnemy>().TakeDamage(1);
+                Destroy(gameObject);
+            }
+        }
+        if (collision.gameObject.CompareTag("Ground"))
+        {
             Destroy(gameObject);
         }
     }
