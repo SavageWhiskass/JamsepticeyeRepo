@@ -327,7 +327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &342899266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -709,6 +709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6069829064389704528, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1935199774}
     - target: {fileID: 6342947013342698371, guid: 3775713dd5463614e93e9791784dde12, type: 3}
       propertyPath: healthManager
       value: 
@@ -1751,6 +1755,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916456899}
   m_CullTransparentMesh: 1
+--- !u!4 &1935199774 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8241495225570794472, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+  m_PrefabInstance: {fileID: 1180016776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1943397134
 GameObject:
   m_ObjectHideFlags: 0
