@@ -26,7 +26,8 @@ public class ShootingManager : MonoBehaviour
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
-            Instantiate(bulletPrefab, firePoint.position, rotation);
+            GameObject newBullet = Instantiate(bulletPrefab, firePoint.position, rotation);
+            newBullet.GetComponent<Bullet>().Initialize(true);
         }
     }
 }
