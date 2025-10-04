@@ -14,4 +14,5 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
+    public virtual void OnAttackHit(Collider2D other) { }
 }

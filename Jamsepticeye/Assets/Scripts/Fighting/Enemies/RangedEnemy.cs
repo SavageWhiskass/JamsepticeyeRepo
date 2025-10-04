@@ -7,11 +7,19 @@ public class RangedEnemy : Enemy
     public GameObject bulletPrefab;
     private Rigidbody2D rb;
     [SerializeField] private Transform player;
+    [SerializeField] private float range = 5f;
     public Transform firePoint;
     float fireCooldown;
     void Awake()
     {
-
+        rb = GetComponent<Rigidbody2D>();
+        if (rb)
+        {
+            rb.gravityScale = 0f;
+            rb.freezeRotation = true;
+            rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
+            rb.drag = 1f;
+        }
     }
 
     void Start()
@@ -22,10 +30,13 @@ public class RangedEnemy : Enemy
     void FixedUpdate()
     {
         float distance = Vector3.Distance(player.position, transform.position);
-        if (distance > 7f)
+
+        if (distance > range)
         {
             Vector3 direction = (player.position - transform.position).normalized;
-            transform.position += direction * speed * Time.deltaTime;
+            float step = speed * Time.fixedDeltaTime;
+            float maxStep = distance - range;
+            transform.position += direction * Mathf.Min(step, maxStep);
         }
     }
 
