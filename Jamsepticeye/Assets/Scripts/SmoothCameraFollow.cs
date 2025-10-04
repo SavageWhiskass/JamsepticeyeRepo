@@ -10,6 +10,11 @@ public class SmoothCameraFollow : MonoBehaviour
     
     Vector3 velocity; 
 
+    void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
     private void FixedUpdate ()
     {
         transform.position = Vector3.SmoothDamp(

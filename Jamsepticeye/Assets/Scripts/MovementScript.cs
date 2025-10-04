@@ -22,6 +22,7 @@ public class MovementScript : MonoBehaviour
     public float castDistance;
     public Vector3 boxOffset;
     public LayerMask ground;
+    public static MovementScript Instance;
 
     void Start()
     {
@@ -30,6 +31,18 @@ public class MovementScript : MonoBehaviour
         maxJumps = 1;
         jumpsLeft = maxJumps;
         
+    }
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()

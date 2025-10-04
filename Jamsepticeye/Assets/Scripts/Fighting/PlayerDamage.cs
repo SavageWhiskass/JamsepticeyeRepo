@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlayerDamage : MonoBehaviour
 {
-    public HealthManager healthManager;
+    public PlayerStats playerStats;
 
     //private void OnMouseDown()
     //{
     //    healthManager.ReduceCurrentHealth(1);
     //}
+    void Awake()
+    {
+        playerStats = GetComponent<PlayerStats>();
+    }
 
     public void TakeDamage(int amount)
     {
-        healthManager.ReduceCurrentHealth(amount);
+        playerStats.ReduceCurrentHealth(amount);
     }
 }
