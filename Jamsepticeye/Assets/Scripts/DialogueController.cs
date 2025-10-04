@@ -62,6 +62,10 @@ public class DialogueController : MonoBehaviour
         else
         {
             ToggleBox(false);
+            dialogueText = "";
+            typeText = false;
+            textIndex = 0;
+            textTimer = 0;
         }
     }
 
