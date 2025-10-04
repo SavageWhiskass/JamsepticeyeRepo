@@ -20,6 +20,7 @@ public class MovementScript : MonoBehaviour
     float jumpCooldown = 0;
     public Vector2 boxSize;
     public float castDistance;
+    public Vector3 boxOffset;
     public LayerMask ground;
 
     void Start()
@@ -28,6 +29,7 @@ public class MovementScript : MonoBehaviour
         animator = GetComponent<Animator>();
         maxJumps = 1;
         jumpsLeft = maxJumps;
+        
     }
 
     void Update()
@@ -103,7 +105,7 @@ public class MovementScript : MonoBehaviour
 
     public bool GroundCheck()
     {
-        if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, ground))
+        if(Physics2D.BoxCast(transform.position + boxOffset, boxSize, 0, -transform.up, castDistance, ground))
         {
             if (!isGrounded)
             {
@@ -119,5 +121,11 @@ public class MovementScript : MonoBehaviour
             return false;
         }
     }
+
+    //Ground check debug
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawCube((transform.position + boxOffset) - transform.up * castDistance, boxSize);
+    //}
 }
 
