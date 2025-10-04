@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The quick brown fox jumped over the lazy dog.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c684eea2c8c83714484789c354ceecf4, type: 2}
   m_sharedMaterial: {fileID: 5546428600907425026, guid: c684eea2c8c83714484789c354ceecf4, type: 2}
@@ -213,8 +213,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -328,7 +328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &342899266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -656,6 +656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8235270837075712441, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 9079413936544478858, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
@@ -860,7 +864,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 79dc7ade295ee7d47842af9efd807740, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1080,6 +1084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RangedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8235270837075712441, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8634413543918590729, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
     m_RemovedGameObjects: []
@@ -1179,6 +1187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1622626648}
   - component: {fileID: 1622626647}
+  - component: {fileID: 1622626649}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1213,6 +1222,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622626649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622626646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec528f2bd756e764da53c2eaaeee4fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 342899265}
+  dialoguePhoto: {fileID: 1271581229}
+  characterPhotos:
+  - {fileID: 21300000, guid: 79dc7ade295ee7d47842af9efd807740, type: 3}
+  - {fileID: 21300000, guid: ecfc609d40c65fb489a89c245d43ce94, type: 3}
+  textBox: {fileID: 252158194}
 --- !u!1 &1638493142
 GameObject:
   m_ObjectHideFlags: 0
