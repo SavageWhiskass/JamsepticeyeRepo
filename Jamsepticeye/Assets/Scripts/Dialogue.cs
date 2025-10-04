@@ -5,5 +5,6 @@ using UnityEngine;
 public class Dialogue
 {
     public int photoIndex;
+    public Color backgroundColor;
     public string text;
 }
