@@ -10,6 +10,7 @@ public class MovementScript : MonoBehaviour
     float horizontalInput;
     public float movespeed;
     Rigidbody2D rb;
+    Animator animator;
     public float jumpPower;
     bool isGrounded = false;
     bool jumpEnabled = true;
@@ -24,6 +25,7 @@ public class MovementScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         maxJumps = 1;
         jumpsLeft = maxJumps;
     }
@@ -36,9 +38,23 @@ public class MovementScript : MonoBehaviour
         //Get left/right input and flip
         horizontalInput = Input.GetAxis("Horizontal");
         Flipsprite();
+        animator.SetFloat("verticalSpeed", rb.velocity.y);
+        if(horizontalInput > 0.01 || horizontalInput < -0.01)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
 
         //Get jumping input
-        if(Input.GetButtonDown("Jump") || Input.GetButton("Jump"))
+        if (Input.GetButtonDown("Jump"))
+        {
+            animator.SetTrigger("jump");
+            holdingJump = true;
+        }
+        else if (Input.GetButtonDown("Jump") || Input.GetButton("Jump"))
         {
             holdingJump = true;
         }
@@ -77,11 +93,11 @@ public class MovementScript : MonoBehaviour
     {
         if(horizontalInput < -0.01f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
         }
         else if(horizontalInput > 0.01f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
         }
     }
 
@@ -94,11 +110,12 @@ public class MovementScript : MonoBehaviour
                 jumpCooldown = 0.12f;
                 jumpsLeft = maxJumps;
             }
-
+            animator.SetBool("isGrounded", true);
             return true;
         }
         else
         {
+            animator.SetBool("isGrounded", false);
             return false;
         }
     }
