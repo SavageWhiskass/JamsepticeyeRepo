@@ -14,10 +14,14 @@ public class PlayerStats : MonoBehaviour
     public int currentMana = 100;
     [SerializeField] public int manaRegen = 1;
     float manaRegenCooldown = 1f;
+    [SerializeField] private GameObject shield;
+    bool shieldActive = false;
+    [SerializeField] float shieldDuration = 2f;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //shield = transform.Find("Shield")?.gameObject;
+        shield.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,6 +38,20 @@ public class PlayerStats : MonoBehaviour
             }
             manaRegenCooldown = 1f;
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            shield.SetActive(true);
+            shieldActive = true;
+            CancelInvoke(nameof(DisableShield));
+            Invoke(nameof(DisableShield), shieldDuration);
+        }
+    }
+
+    void DisableShield()
+    {
+        shield.SetActive(false);
+        shieldActive = false;
     }
 
     private void FixedUpdate()
@@ -44,6 +62,10 @@ public class PlayerStats : MonoBehaviour
 
     public void ReduceCurrentHealth(int amount)
     {
+        if (shieldActive)
+        {
+            return;
+        }
         Debug.Log("ow!");
         Debug.Log(currentHealth);
         if ((currentHealth - amount) < 0)

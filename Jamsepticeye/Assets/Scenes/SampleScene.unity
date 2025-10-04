@@ -730,7 +730,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.274
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6803004322381584837, guid: 3775713dd5463614e93e9791784dde12, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -738,6 +739,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2040703183}
   m_SourcePrefab: {fileID: 100100000, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+--- !u!1 &1180016777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 115451443053814956, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+  m_PrefabInstance: {fileID: 1180016776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1226109235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,6 +1954,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneBuildIndex: 0
+  maxMana: 100
+  currentMana: 100
+  manaRegen: 1
+  shield: {fileID: 1180016777}
 --- !u!1 &2047070555
 GameObject:
   m_ObjectHideFlags: 0
