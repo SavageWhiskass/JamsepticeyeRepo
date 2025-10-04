@@ -312,6 +312,7 @@ MonoBehaviour:
   - {fileID: 1499335995}
   - {fileID: 1677238623}
   player: {fileID: 2040703169}
+  SceneBuildIndex: 0
 --- !u!1 &342899265
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +639,10 @@ PrefabInstance:
     - target: {fileID: 1150573107300957006, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790236057345703437, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7793852917054886471, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
       propertyPath: hp
@@ -1052,9 +1057,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1790236057345703437, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790236057345703437, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790236057345703437, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4278407787049217897, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2040703176}
     - target: {fileID: 4278407787049217897, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
       propertyPath: bulletPrefab
       value: 
