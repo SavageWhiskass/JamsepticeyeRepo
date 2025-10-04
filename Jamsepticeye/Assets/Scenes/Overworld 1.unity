@@ -903,6 +903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: car
       objectReference: {fileID: 0}
+    - target: {fileID: 2847628660884826214, guid: 44302af8ff2433a44921929e834e1993, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3284626218468921202, guid: 44302af8ff2433a44921929e834e1993, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.87

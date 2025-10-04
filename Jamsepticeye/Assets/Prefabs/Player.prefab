@@ -199,8 +199,9 @@ MonoBehaviour:
   movespeed: 7
   jumpPower: 11
   maxJumps: 1
-  boxSize: {x: 0.74, y: 0.14}
-  castDistance: 0.83
+  boxSize: {x: 0.8, y: 0.15}
+  castDistance: 1.1
+  boxOffset: {x: -0.2, y: 0, z: 0}
   ground:
     serializedVersion: 2
     m_Bits: 64
