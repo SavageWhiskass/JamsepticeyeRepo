@@ -6,8 +6,13 @@ public class PlayerDamage : MonoBehaviour
 {
     public HealthManager healthManager;
 
-    private void OnMouseDown()
+    //private void OnMouseDown()
+    //{
+    //    healthManager.ReduceCurrentHealth(1);
+    //}
+
+    public void TakeDamage(int amount)
     {
-        healthManager.ReduceCurrentHealth(1);
+        healthManager.ReduceCurrentHealth(amount);
     }
 }

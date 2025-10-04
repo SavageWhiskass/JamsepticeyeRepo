@@ -642,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1790236057345703437, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
       propertyPath: m_Constraints
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7793852917054886471, guid: 0701ddaf01e66184abc3d949bfd9d8a1, type: 3}
       propertyPath: hp
@@ -1062,7 +1062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1790236057345703437, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
       propertyPath: m_Constraints
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1790236057345703437, guid: f5fa5dbc97227ad44a97426597ffbc6c, type: 3}
       propertyPath: m_GravityScale
