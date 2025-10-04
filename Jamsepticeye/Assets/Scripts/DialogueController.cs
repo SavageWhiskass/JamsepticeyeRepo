@@ -9,6 +9,7 @@ public class DialogueController : MonoBehaviour
     public GameObject dialogueUI;
     public Image dialoguePhoto;
     public Sprite[] characterPhotos;
+    public Image photoBackground;
     public TMP_Text textBox;
     Queue<Dialogue> dialogueQueue;
     string dialogueText = "";
@@ -24,13 +25,26 @@ public class DialogueController : MonoBehaviour
     public void AddDialogueToQueue(int photoIndex, string text)
     {
         Dialogue newDialogue = new Dialogue();
+        switch (photoIndex)
+        {
+            case 0:
+                newDialogue.backgroundColor = new Color(0.337f, 0.278f, 0.42f);
+                break;
+            case 1:
+                newDialogue.backgroundColor = new Color(0.898f, 0.651f, 0.318f);
+                break;
+            default:
+                newDialogue.backgroundColor = Color.white;
+                break;
+        }
         newDialogue.photoIndex = photoIndex;
         newDialogue.text = text;
         dialogueQueue.Enqueue(newDialogue);
     }
 
-    void CreateDialogue(int photoIndex, string text)
+    void CreateDialogue(Color color, int photoIndex, string text)
     {
+        photoBackground.color = color;
         SetPhoto(photoIndex);
         dialogueText = text;
         textBox.text = "";
@@ -57,11 +71,15 @@ public class DialogueController : MonoBehaviour
         dialogueQueue.Dequeue();
         if(dialogueQueue.Count > 0)
         {
-            CreateDialogue(dialogueQueue.Peek().photoIndex, dialogueQueue.Peek().text);
+            CreateDialogue(dialogueQueue.Peek().backgroundColor, dialogueQueue.Peek().photoIndex, dialogueQueue.Peek().text);
         }
         else
         {
             ToggleBox(false);
+            dialogueText = "";
+            typeText = false;
+            textIndex = 0;
+            textTimer = 0;
         }
     }
 
@@ -70,17 +88,17 @@ public class DialogueController : MonoBehaviour
         ////Test input
         if (Input.GetKeyDown(KeyCode.P))
         {
-            AddDialogueToQueue(0, "The quick brown fox jumped over the lazy dog.");
-            AddDialogueToQueue(1, "What? What does that even mean?");
-            AddDialogueToQueue(0, "Hello World!");
-            AddDialogueToQueue(1, "STOP BEING WEIRD!");
+            AddDialogueToQueue(1, "The quick brown fox jumped over the lazy dog.");
+            AddDialogueToQueue(0, "What? What does that even mean?");
+            AddDialogueToQueue(1, "Hello World!");
+            AddDialogueToQueue(0, "STOP BEING WEIRD!");
         }
         ////Test input end
 
 
         if (dialogueQueue.Count > 0 && dialogueText == "")
         {
-            CreateDialogue(dialogueQueue.Peek().photoIndex, dialogueQueue.Peek().text);
+            CreateDialogue(dialogueQueue.Peek().backgroundColor, dialogueQueue.Peek().photoIndex, dialogueQueue.Peek().text);
         }
 
         if (typeText)

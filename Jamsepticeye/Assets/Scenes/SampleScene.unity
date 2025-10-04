@@ -722,6 +722,14 @@ PrefabInstance:
       propertyPath: healthManager
       value: 
       objectReference: {fileID: 326243277}
+    - target: {fileID: 8241495225570794472, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241495225570794472, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.274
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -778,7 +786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3372549, g: 0.2784314, b: 0.41960788, a: 1}
+  m_Color: {r: 0.8980393, g: 0.6509804, b: 0.31764707, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1234,7 +1242,8 @@ MonoBehaviour:
   dialoguePhoto: {fileID: 1271581229}
   characterPhotos:
   - {fileID: 21300000, guid: 79dc7ade295ee7d47842af9efd807740, type: 3}
-  - {fileID: 21300000, guid: ecfc609d40c65fb489a89c245d43ce94, type: 3}
+  - {fileID: 21300000, guid: e50653d8818c92c49b736d00e22e37be, type: 3}
+  photoBackground: {fileID: 1226109237}
   textBox: {fileID: 252158194}
 --- !u!1 &1638493142
 GameObject:
