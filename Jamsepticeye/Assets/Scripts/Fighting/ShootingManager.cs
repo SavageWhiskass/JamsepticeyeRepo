@@ -4,17 +4,22 @@ public class ShootingManager : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform firePoint;
+    Animator animator;
 
-    void Awake()
+    private void Start()
     {
-    }
-
-    void Start()
-    {
-
+        animator = GetComponent<Animator>();
     }
 
     void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetTrigger("cast");
+        }
+    }
+
+    public void CastBasic()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
