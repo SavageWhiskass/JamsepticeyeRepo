@@ -18,16 +18,20 @@ public class ShootingManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0f;
+            if (FindObjectOfType<PlayerStats>().currentMana > 0)
+            {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                mousePos.z = 0f;
 
-            Vector3 direction = (mousePos - firePoint.position).normalized;
+                Vector3 direction = (mousePos - firePoint.position).normalized;
 
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            Quaternion rotation = Quaternion.Euler(0, 0, angle);
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
-            GameObject newBullet = Instantiate(bulletPrefab, firePoint.position, rotation);
-            newBullet.GetComponent<Bullet>().Initialize(true);
+                GameObject newBullet = Instantiate(bulletPrefab, firePoint.position, rotation);
+                newBullet.GetComponent<Bullet>().Initialize(true);
+                FindObjectOfType<PlayerStats>().currentMana = FindObjectOfType<PlayerStats>().currentMana - 10;
+            }
         }
     }
 }

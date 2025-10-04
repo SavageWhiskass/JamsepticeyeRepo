@@ -45,29 +45,29 @@ public class HealthManager : MonoBehaviour
 
     void UpdateGUI()
     {
-        switch (currentHealth)
-        {
-            case 0:
-                hearts[2].SetActive(false);
-                hearts[1].SetActive(false);
-                hearts[0].SetActive(false);
-                break;
-            case 1:
-                hearts[2].SetActive(false);
-                hearts[1].SetActive(false);
-                hearts[0].SetActive(true);
-                break;
-            case 2:
-                hearts[2].SetActive(false);
-                hearts[1].SetActive(true);
-                hearts[0].SetActive(true);
-                break;
-            case 3:
-                hearts[2].SetActive(true);
-                hearts[1].SetActive(true);
-                hearts[0].SetActive(true);
-                break;
-        }
+        //switch (currentHealth)
+        //{
+        //    case 0:
+        //        hearts[2].SetActive(false);
+        //        hearts[1].SetActive(false);
+        //        hearts[0].SetActive(false);
+        //        break;
+        //    case 1:
+        //        hearts[2].SetActive(false);
+        //        hearts[1].SetActive(false);
+        //        hearts[0].SetActive(true);
+        //        break;
+        //    case 2:
+        //        hearts[2].SetActive(false);
+        //        hearts[1].SetActive(true);
+        //        hearts[0].SetActive(true);
+        //        break;
+        //    case 3:
+        //        hearts[2].SetActive(true);
+        //        hearts[1].SetActive(true);
+        //        hearts[0].SetActive(true);
+        //        break;
+        //}
     }
 
     void DeathCheck()

@@ -10,6 +10,7 @@ public abstract class Enemy : MonoBehaviour
         hp -= damage;
         if (hp <= 0)
         {
+            FindObjectOfType<PlayerStats>().RegisterKill();
             Destroy(gameObject);
         }
     }

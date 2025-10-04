@@ -20,12 +20,25 @@ public class MovementScript : MonoBehaviour
     public Vector2 boxSize;
     public float castDistance;
     public LayerMask ground;
+    public static MovementScript Instance;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         maxJumps = 1;
         jumpsLeft = maxJumps;
+    }
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()
