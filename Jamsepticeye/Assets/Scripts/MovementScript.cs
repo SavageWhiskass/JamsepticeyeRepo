@@ -10,6 +10,7 @@ public class MovementScript : MonoBehaviour
     float horizontalInput;
     public float movespeed;
     Rigidbody2D rb;
+    Animator animator;
     public float jumpPower;
     bool isGrounded = false;
     bool jumpEnabled = true;
@@ -19,13 +20,16 @@ public class MovementScript : MonoBehaviour
     float jumpCooldown = 0;
     public Vector2 boxSize;
     public float castDistance;
+    public Vector3 boxOffset;
     public LayerMask ground;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         maxJumps = 1;
         jumpsLeft = maxJumps;
+        
     }
 
     void Update()
@@ -36,9 +40,23 @@ public class MovementScript : MonoBehaviour
         //Get left/right input and flip
         horizontalInput = Input.GetAxis("Horizontal");
         Flipsprite();
+        animator.SetFloat("verticalSpeed", rb.velocity.y);
+        if(horizontalInput > 0.01 || horizontalInput < -0.01)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
 
         //Get jumping input
-        if(Input.GetButtonDown("Jump") || Input.GetButton("Jump"))
+        if (Input.GetButtonDown("Jump"))
+        {
+            animator.SetTrigger("jump");
+            holdingJump = true;
+        }
+        else if (Input.GetButtonDown("Jump") || Input.GetButton("Jump"))
         {
             holdingJump = true;
         }
@@ -77,30 +95,37 @@ public class MovementScript : MonoBehaviour
     {
         if(horizontalInput < -0.01f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.transform.rotation = new Quaternion(0, 180, 0, 0);
         }
         else if(horizontalInput > 0.01f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
         }
     }
 
     public bool GroundCheck()
     {
-        if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, ground))
+        if(Physics2D.BoxCast(transform.position + boxOffset, boxSize, 0, -transform.up, castDistance, ground))
         {
             if (!isGrounded)
             {
                 jumpCooldown = 0.12f;
                 jumpsLeft = maxJumps;
             }
-
+            animator.SetBool("isGrounded", true);
             return true;
         }
         else
         {
+            animator.SetBool("isGrounded", false);
             return false;
         }
     }
+
+    //Ground check debug
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawCube((transform.position + boxOffset) - transform.up * castDistance, boxSize);
+    //}
 }
 
