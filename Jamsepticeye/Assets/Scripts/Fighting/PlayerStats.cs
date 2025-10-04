@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     int enemiesKilled = 0;
     public int maxMana = 100;
     public int currentMana = 100;
-    public int manaRegen = 1;
+    [SerializeField] public int manaRegen = 1;
     float manaRegenCooldown = 1f;
     // Start is called before the first frame update
     void Start()
@@ -28,6 +28,10 @@ public class PlayerStats : MonoBehaviour
         if (manaRegenCooldown <= 0f)
         {
             currentMana = currentMana + manaRegen;
+            if(currentMana > maxMana)
+            {
+                currentMana = maxMana;
+            }
             manaRegenCooldown = 1f;
         }
     }
