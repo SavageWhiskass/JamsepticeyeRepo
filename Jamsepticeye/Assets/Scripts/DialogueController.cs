@@ -68,17 +68,17 @@ public class DialogueController : MonoBehaviour
     private void Update()
     {
         ////Test input
-        //if (Input.GetKeyDown(KeyCode.P))
-        //{
-        //    AddDialogueToQueue(0, "The quick brown fox jumped over the lazy dog.");
-        //    AddDialogueToQueue(1, "What? What does that even mean?");
-        //    AddDialogueToQueue(0, "Hello World!");
-        //    AddDialogueToQueue(1, "STOP BEING WEIRD!");
-        //}
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            AddDialogueToQueue(0, "The quick brown fox jumped over the lazy dog.");
+            AddDialogueToQueue(1, "What? What does that even mean?");
+            AddDialogueToQueue(0, "Hello World!");
+            AddDialogueToQueue(1, "STOP BEING WEIRD!");
+        }
         ////Test input end
 
 
-        if(dialogueQueue.Count > 0 && dialogueText == "")
+        if (dialogueQueue.Count > 0 && dialogueText == "")
         {
             CreateDialogue(dialogueQueue.Peek().photoIndex, dialogueQueue.Peek().text);
         }
