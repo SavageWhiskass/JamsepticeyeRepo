@@ -79,6 +79,7 @@ public class PlayerStats : MonoBehaviour
             print("Switching scene to " + SceneBuildIndex);
             SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
             currentHealth = maxHealth;
+            currentMana = maxMana;
         }
     }
 }
