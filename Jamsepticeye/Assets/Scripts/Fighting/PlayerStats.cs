@@ -14,8 +14,18 @@ public class PlayerStats : MonoBehaviour
     public int currentMana = 100;
     [SerializeField] public int manaRegen = 1;
     float manaRegenCooldown = 1f;
+<<<<<<< Updated upstream
     public HealthManager healthManager;
 
+=======
+    Animator animator;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+>>>>>>> Stashed changes
 
     // Update is called once per frame
     void Update()
@@ -33,7 +43,10 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     public void ReduceCurrentHealth(int amount)
     {
         DeathCheck(healthManager.ReduceCurrentHealth(amount));
@@ -54,10 +67,14 @@ public class PlayerStats : MonoBehaviour
     {
         if (isDead)
         {
-            print("Switching scene to " + SceneBuildIndex);
-            SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
-            currentHealth = maxHealth;
-            currentMana = maxMana;
+            animator.SetTrigger("die");
         }
+    }
+
+    void Die()
+    {
+        SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
+        currentHealth = maxHealth;
+        currentMana = maxMana;
     }
 }
