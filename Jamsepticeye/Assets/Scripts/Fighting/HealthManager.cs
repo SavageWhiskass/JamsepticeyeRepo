@@ -23,7 +23,7 @@ public class HealthManager : MonoBehaviour
         disabledHeart = new Color(0, 0, 0, 0);
     }
 
-    public void ReduceCurrentHealth(int amount)
+    public bool ReduceCurrentHealth(int amount)
     {
         for(int i = 0; i < amount; i++)
         {
@@ -34,7 +34,7 @@ public class HealthManager : MonoBehaviour
             }
         }
 
-        DeathCheck();
+        return DeathCheck();
     }
 
     public void IncreaseCurrentHealth(int amount)
@@ -62,12 +62,15 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    void DeathCheck()
+    bool DeathCheck()
     {
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
-            print("Switching scene to " + SceneBuildIndex);
-            SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

@@ -14,11 +14,8 @@ public class PlayerStats : MonoBehaviour
     public int currentMana = 100;
     [SerializeField] public int manaRegen = 1;
     float manaRegenCooldown = 1f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public HealthManager healthManager;
+
 
     // Update is called once per frame
     void Update()
@@ -36,38 +33,15 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-
-    }
-
 
     public void ReduceCurrentHealth(int amount)
     {
-        Debug.Log("ow!");
-        Debug.Log(currentHealth);
-        if ((currentHealth - amount) < 0)
-        {
-            currentHealth = 0;
-        }
-        else
-        {
-            currentHealth -= amount;
-        }
-        DeathCheck();
+        DeathCheck(healthManager.ReduceCurrentHealth(amount));
     }
 
     public void IncreaseCurrentHealth(int amount)
     {
-        if ((currentHealth + amount) > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-        else
-        {
-            currentHealth += amount;
-        }
-        DeathCheck();
+        healthManager.IncreaseCurrentHealth(amount);
     }
 
     public void RegisterKill()
@@ -76,9 +50,9 @@ public class PlayerStats : MonoBehaviour
         Debug.Log(enemiesKilled);
     }
 
-    void DeathCheck()
+    void DeathCheck(bool isDead)
     {
-        if (currentHealth == 0)
+        if (isDead)
         {
             print("Switching scene to " + SceneBuildIndex);
             SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
