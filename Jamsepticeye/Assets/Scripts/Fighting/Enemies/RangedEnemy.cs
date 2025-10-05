@@ -1,23 +1,30 @@
-using UnityEditor.Build.Reporting;
 using UnityEngine;
 
 public class RangedEnemy : Enemy
 {
     [SerializeField] private float speed = 2f;
-    [SerializeField] private int shooting_cooldown = 3;
+    [SerializeField] private float shooting_cooldown = 3f;
     public GameObject bulletPrefab;
-    Transform player;
-    Animator animator;
+    private Rigidbody2D rb;
+    [SerializeField] private Transform player;
     [SerializeField] private float range = 5f;
     public Transform firePoint;
     float fireCooldown;
-    bool inRange = false;
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        if (rb)
+        {
+            rb.gravityScale = 0f;
+            rb.freezeRotation = true;
+            rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
+            rb.drag = 1f;
+        }
+    }
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        animator = GetComponent<Animator>();
-        fireCooldown = shooting_cooldown;
     }
 
     void FixedUpdate()
@@ -26,50 +33,38 @@ public class RangedEnemy : Enemy
 
         if (distance > range)
         {
-            inRange = false;
-            Vector3 direction = (player.position - transform.position).normalized;
-            
 
-            if (direction.x < 0)
-            {
-                transform.rotation = new Quaternion(0, 180, 0, 0);
-            }
-            else
-            {
-                transform.rotation = new Quaternion(0, 0, 0, 0);
-            }
+            Vector3 direction = (player.position - transform.position).normalized;
+
             float step = speed * Time.fixedDeltaTime;
             float maxStep = distance - range;
             transform.position += direction * Mathf.Min(step, maxStep);
         }
-        else
-        {
-            inRange = true;
-        }
+
     }
 
     void Update()
     {
-        if (inRange)
-        {
-            fireCooldown -= Time.deltaTime;
-            animator.SetBool("isMoving", false);
-        }
-        else
-        {
-            animator.SetBool("isMoving", true);
-        }
+        fireCooldown = fireCooldown - Time.deltaTime;
 
         if (fireCooldown <= 0f)
         {
-            animator.SetTrigger("cast");
+            Shoot();
             fireCooldown = shooting_cooldown;
         }
     }
 
     void Shoot()
     {
-        GameObject newBullet = Instantiate(bulletPrefab, firePoint.position, new Quaternion(0, 0, 0, 0));
+        Vector3 target = player.position;
+
+        Vector3 direction = (target - firePoint.position).normalized;
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.Euler(0, 0, angle);
+
+        GameObject newBullet = Instantiate(bulletPrefab, firePoint.position, rotation);
+        newBullet.GetComponent<Bullet>().Initialize(false);
     }
 
 }
