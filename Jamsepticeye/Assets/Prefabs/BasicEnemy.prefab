@@ -86,6 +86,7 @@ MonoBehaviour:
   player: {fileID: 0}
   range: 2
   attackCollider: {fileID: 6291007245093154882}
+  attack_cooldown: 3
 --- !u!61 &251157467401706835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7765e5f532942574887170b812dee7a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthManager: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!1 &8722144945426844022
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +334,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9339623, g: 0.14722276, b: 0.074893214, a: 1}
   m_FlipX: 0

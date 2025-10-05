@@ -86,4 +86,5 @@ public class PlayerStats : MonoBehaviour
             currentMana = maxMana;
         }
     }
+
 }
