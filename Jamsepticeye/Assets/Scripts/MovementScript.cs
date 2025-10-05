@@ -28,7 +28,7 @@ public class MovementScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        maxJumps = 1;
+        maxJumps = 2;
         jumpsLeft = maxJumps;
         
     }
