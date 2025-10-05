@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5955435256804346909}
   - component: {fileID: 6342947013342698371}
   - component: {fileID: 6069829064389704528}
+  - component: {fileID: 1035893381531684866}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -217,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7765e5f532942574887170b812dee7a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthManager: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!114 &6069829064389704528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +233,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1953744427796686213, guid: 684307cb10cca54459cc85eed91c10e8, type: 3}
   firePoint: {fileID: 8241495225570794472}
+--- !u!114 &1035893381531684866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903102828631663745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bda403a8bfc6ed4da24b3f87969d381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneBuildIndex: 0
+  maxMana: 100
+  currentMana: 100
+  manaRegen: 1
 --- !u!1 &6511689570178927598
 GameObject:
   m_ObjectHideFlags: 0
