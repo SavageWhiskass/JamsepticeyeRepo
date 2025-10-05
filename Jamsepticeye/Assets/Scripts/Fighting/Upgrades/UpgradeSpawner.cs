@@ -15,12 +15,13 @@ public class UpgradeSpawner : MonoBehaviour
         {
             Instantiate(shieldPrefab, transform.position, Quaternion.identity);
         }
-        else if (player.GetComponent<PlayerStats>().enemiesKilled > 10 && player.GetComponent<PlayerStats>().triple_jump)
+        else if (player.GetComponent<PlayerStats>().enemiesKilled > 10 && !player.GetComponent<PlayerStats>().triple_jump)
         {
             Instantiate(tripleJumpPrefab, transform.position, Quaternion.identity);
         }
-        else if (player.GetComponent<PlayerStats>().enemiesKilled > 20)
+        else if (player.GetComponent<PlayerStats>().enemiesKilled > 20 && !player.GetComponent<PlayerStats>().has_big_blast)
         {
+            Debug.Log("huh");
             Instantiate(bigBlastPrefab, transform.position, Quaternion.identity);
         }
     }

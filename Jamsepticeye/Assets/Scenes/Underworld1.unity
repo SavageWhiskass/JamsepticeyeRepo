@@ -1493,7 +1493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shieldPrefab: {fileID: 3095122090193366712, guid: 5601d7a8f6507ed4194b2e797623d50b, type: 3}
   tripleJumpPrefab: {fileID: 3095122090193366712, guid: 5d75a1eeb333fd942978fe6c38282ab5, type: 3}
-  bigBlastPrefab: {fileID: 0}
+  bigBlastPrefab: {fileID: 3095122090193366712, guid: 0d299323175d5f64bb7de58ce858386b, type: 3}
 --- !u!4 &900168882
 Transform:
   m_ObjectHideFlags: 0
@@ -2618,16 +2618,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4760339747687373671, guid: 3775713dd5463614e93e9791784dde12, type: 3}
       propertyPath: has_shield
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760339747687373671, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+      propertyPath: triple_jump
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4760339747687373671, guid: 3775713dd5463614e93e9791784dde12, type: 3}
       propertyPath: enemiesKilled
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5903102828631663745, guid: 3775713dd5463614e93e9791784dde12, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6069829064389704528, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+      propertyPath: powerBulletPrefab
+      value: 
+      objectReference: {fileID: 1953744427796686213, guid: 0557e82036359514e98273d525087272, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
