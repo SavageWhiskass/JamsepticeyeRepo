@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
-    int maxHealth = 3;
+    public int maxHealth = 3;
     int currentHealth = 3;
     public int SceneBuildIndex;
     int enemiesKilled = 0;
     public int maxMana = 100;
     public int currentMana = 100;
-    [SerializeField] public int manaRegen = 1;
+    public int damage = 1;
+    [SerializeField] public int manaRegen = 0;
     float manaRegenCooldown = 1f;
     public HealthManager healthManager;
 
@@ -42,6 +43,11 @@ public class PlayerStats : MonoBehaviour
     public void IncreaseCurrentHealth(int amount)
     {
         healthManager.IncreaseCurrentHealth(amount);
+    }
+
+    public void IncreaseMaxHealth(int amount)
+    {
+        healthManager.IncreaseMaxHealth(amount);
     }
 
     public void RegisterKill()

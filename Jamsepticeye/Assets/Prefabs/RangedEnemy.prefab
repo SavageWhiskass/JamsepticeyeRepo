@@ -81,10 +81,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
+  healthUpgradePrefab: {fileID: 3095122090193366712, guid: d229de8cf50f33b419ea05dadd0653ec, type: 3}
+  manaUpgradePrefab: {fileID: 3095122090193366712, guid: 4e5f6ce2195189241becf9a751765206, type: 3}
+  manaRegenUpgradePrefab: {fileID: 3095122090193366712, guid: 8d7e2cdd506ff4b4e9224086b8168506, type: 3}
   speed: 3
   shooting_cooldown: 3
   bulletPrefab: {fileID: 1953744427796686213, guid: 684307cb10cca54459cc85eed91c10e8, type: 3}
-  player: {fileID: 0}
   range: 3
   firePoint: {fileID: 6228536590610974600}
 --- !u!61 &251157467401706835
