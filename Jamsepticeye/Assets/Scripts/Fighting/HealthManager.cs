@@ -8,8 +8,8 @@ public class HealthManager : MonoBehaviour
 {
     int maxHealth = 3;
     int currentHealth = 3;
-    public GameObject[] hearts;
-    public GameObject player;
+    GameObject[] hearts;
+    GameObject player;
     Color activeHeart;
     Color hurtHeart;
     Color disabledHeart;
@@ -18,6 +18,13 @@ public class HealthManager : MonoBehaviour
 
     private void Start()
     {
+        hearts = new GameObject[100];
+        GameObject[] heartCollection = GameObject.FindGameObjectsWithTag("Heart");
+        foreach(GameObject heartUI in heartCollection)
+        {
+            hearts[heartUI.GetComponent<HeartIndex>().place - 1] = heartUI;
+        }
+        player = GameObject.FindGameObjectWithTag("Player");
         activeHeart = Color.white;
         hurtHeart = new Color(0.114f, 0.114f, 0.114f, 0.184f);
         disabledHeart = new Color(0, 0, 0, 0);

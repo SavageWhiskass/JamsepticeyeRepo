@@ -133,9 +133,10 @@ GameObject:
   - component: {fileID: 5024074}
   - component: {fileID: 5024076}
   - component: {fileID: 5024075}
+  - component: {fileID: 5024077}
   m_Layer: 5
   m_Name: Heart_5 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -197,6 +198,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5024073}
   m_CullTransparentMesh: 1
+--- !u!114 &5024077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 95
 --- !u!1 &34672363
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,9 +222,10 @@ GameObject:
   - component: {fileID: 34672364}
   - component: {fileID: 34672366}
   - component: {fileID: 34672365}
+  - component: {fileID: 34672367}
   m_Layer: 5
   m_Name: Heart_6 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -272,6 +287,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34672363}
   m_CullTransparentMesh: 1
+--- !u!114 &34672367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34672363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 16
 --- !u!1 &45926401
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,9 +311,10 @@ GameObject:
   - component: {fileID: 45926402}
   - component: {fileID: 45926404}
   - component: {fileID: 45926403}
+  - component: {fileID: 45926405}
   m_Layer: 5
   m_Name: Heart_7 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,6 +376,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45926401}
   m_CullTransparentMesh: 1
+--- !u!114 &45926405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45926401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 47
 --- !u!1 &48168295
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,9 +400,10 @@ GameObject:
   - component: {fileID: 48168296}
   - component: {fileID: 48168298}
   - component: {fileID: 48168297}
+  - component: {fileID: 48168299}
   m_Layer: 5
   m_Name: Heart_3 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,6 +465,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48168295}
   m_CullTransparentMesh: 1
+--- !u!114 &48168299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48168295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 73
 --- !u!1 &50279131
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,9 +489,10 @@ GameObject:
   - component: {fileID: 50279132}
   - component: {fileID: 50279134}
   - component: {fileID: 50279133}
+  - component: {fileID: 50279135}
   m_Layer: 5
   m_Name: Heart_9 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,6 +554,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50279131}
   m_CullTransparentMesh: 1
+--- !u!114 &50279135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50279131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 59
 --- !u!1 &63791608
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,9 +578,10 @@ GameObject:
   - component: {fileID: 63791609}
   - component: {fileID: 63791611}
   - component: {fileID: 63791610}
+  - component: {fileID: 63791612}
   m_Layer: 5
   m_Name: Heart_4 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -572,6 +643,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63791608}
   m_CullTransparentMesh: 1
+--- !u!114 &63791612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63791608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 34
 --- !u!1 &115721606
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,9 +667,10 @@ GameObject:
   - component: {fileID: 115721607}
   - component: {fileID: 115721609}
   - component: {fileID: 115721608}
+  - component: {fileID: 115721610}
   m_Layer: 5
   m_Name: Heart_4
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -647,6 +732,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115721606}
   m_CullTransparentMesh: 1
+--- !u!114 &115721610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115721606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 4
 --- !u!1 &117799106
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,9 +756,10 @@ GameObject:
   - component: {fileID: 117799107}
   - component: {fileID: 117799109}
   - component: {fileID: 117799108}
+  - component: {fileID: 117799110}
   m_Layer: 5
   m_Name: Heart_3 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -722,6 +821,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117799106}
   m_CullTransparentMesh: 1
+--- !u!114 &117799110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117799106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 23
 --- !u!1 &125155916
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,9 +845,10 @@ GameObject:
   - component: {fileID: 125155917}
   - component: {fileID: 125155919}
   - component: {fileID: 125155918}
+  - component: {fileID: 125155920}
   m_Layer: 5
   m_Name: Heart_7 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -797,6 +910,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125155916}
   m_CullTransparentMesh: 1
+--- !u!114 &125155920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125155916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 57
 --- !u!1 &172689759
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,9 +934,10 @@ GameObject:
   - component: {fileID: 172689760}
   - component: {fileID: 172689762}
   - component: {fileID: 172689761}
+  - component: {fileID: 172689763}
   m_Layer: 5
   m_Name: Heart_2 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -872,6 +999,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172689759}
   m_CullTransparentMesh: 1
+--- !u!114 &172689763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172689759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 92
 --- !u!1 &174354911
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,9 +1023,10 @@ GameObject:
   - component: {fileID: 174354912}
   - component: {fileID: 174354914}
   - component: {fileID: 174354913}
+  - component: {fileID: 174354915}
   m_Layer: 5
   m_Name: Heart_9 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -947,6 +1088,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174354911}
   m_CullTransparentMesh: 1
+--- !u!114 &174354915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174354911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 99
 --- !u!1 &175956932
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,9 +1112,10 @@ GameObject:
   - component: {fileID: 175956933}
   - component: {fileID: 175956935}
   - component: {fileID: 175956934}
+  - component: {fileID: 175956936}
   m_Layer: 5
   m_Name: Heart_7 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1022,6 +1177,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175956932}
   m_CullTransparentMesh: 1
+--- !u!114 &175956936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175956932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 37
 --- !u!1 &205441109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,9 +1201,10 @@ GameObject:
   - component: {fileID: 205441110}
   - component: {fileID: 205441112}
   - component: {fileID: 205441111}
+  - component: {fileID: 205441113}
   m_Layer: 5
   m_Name: Heart_5 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1097,6 +1266,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205441109}
   m_CullTransparentMesh: 1
+--- !u!114 &205441113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205441109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 75
 --- !u!1 &215520091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,9 +1290,10 @@ GameObject:
   - component: {fileID: 215520092}
   - component: {fileID: 215520094}
   - component: {fileID: 215520093}
+  - component: {fileID: 215520095}
   m_Layer: 5
   m_Name: Heart_8 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1172,6 +1355,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215520091}
   m_CullTransparentMesh: 1
+--- !u!114 &215520095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215520091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 98
 --- !u!1 &240872893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,9 +1379,10 @@ GameObject:
   - component: {fileID: 240872894}
   - component: {fileID: 240872896}
   - component: {fileID: 240872895}
+  - component: {fileID: 240872897}
   m_Layer: 5
   m_Name: Heart_7 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1247,6 +1444,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240872893}
   m_CullTransparentMesh: 1
+--- !u!114 &240872897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240872893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 67
 --- !u!1 &248731870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,9 +1468,10 @@ GameObject:
   - component: {fileID: 248731871}
   - component: {fileID: 248731873}
   - component: {fileID: 248731872}
+  - component: {fileID: 248731874}
   m_Layer: 5
   m_Name: Heart_1 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1322,6 +1533,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248731870}
   m_CullTransparentMesh: 1
+--- !u!114 &248731874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248731870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 71
 --- !u!1 &255707388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,9 +1557,10 @@ GameObject:
   - component: {fileID: 255707389}
   - component: {fileID: 255707391}
   - component: {fileID: 255707390}
+  - component: {fileID: 255707392}
   m_Layer: 5
   m_Name: Heart_10
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1397,6 +1622,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255707388}
   m_CullTransparentMesh: 1
+--- !u!114 &255707392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255707388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 10
 --- !u!1 &301667130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,9 +1646,10 @@ GameObject:
   - component: {fileID: 301667131}
   - component: {fileID: 301667133}
   - component: {fileID: 301667132}
+  - component: {fileID: 301667134}
   m_Layer: 5
   m_Name: Heart_1 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1472,6 +1711,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301667130}
   m_CullTransparentMesh: 1
+--- !u!114 &301667134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301667130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 21
 --- !u!1 &303138347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,9 +1735,10 @@ GameObject:
   - component: {fileID: 303138348}
   - component: {fileID: 303138350}
   - component: {fileID: 303138349}
+  - component: {fileID: 303138351}
   m_Layer: 5
   m_Name: Heart_10 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1547,6 +1800,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303138347}
   m_CullTransparentMesh: 1
+--- !u!114 &303138351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303138347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 90
 --- !u!1 &347230481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,9 +2036,10 @@ GameObject:
   - component: {fileID: 417151736}
   - component: {fileID: 417151738}
   - component: {fileID: 417151737}
+  - component: {fileID: 417151739}
   m_Layer: 5
   m_Name: Heart_9 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1834,6 +2101,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417151735}
   m_CullTransparentMesh: 1
+--- !u!114 &417151739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417151735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 19
 --- !u!1 &417179493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,9 +2125,10 @@ GameObject:
   - component: {fileID: 417179494}
   - component: {fileID: 417179496}
   - component: {fileID: 417179495}
+  - component: {fileID: 417179497}
   m_Layer: 5
   m_Name: Heart_4 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1909,6 +2190,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417179493}
   m_CullTransparentMesh: 1
+--- !u!114 &417179497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417179493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 54
 --- !u!1 &418734076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,9 +2214,10 @@ GameObject:
   - component: {fileID: 418734077}
   - component: {fileID: 418734079}
   - component: {fileID: 418734078}
+  - component: {fileID: 418734080}
   m_Layer: 5
   m_Name: Heart_2 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1984,6 +2279,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418734076}
   m_CullTransparentMesh: 1
+--- !u!114 &418734080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418734076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 42
 --- !u!1 &444242996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,9 +2379,10 @@ GameObject:
   - component: {fileID: 448271674}
   - component: {fileID: 448271676}
   - component: {fileID: 448271675}
+  - component: {fileID: 448271677}
   m_Layer: 5
   m_Name: Heart_6 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2135,6 +2444,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448271673}
   m_CullTransparentMesh: 1
+--- !u!114 &448271677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448271673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 56
 --- !u!1 &450548624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,9 +2468,10 @@ GameObject:
   - component: {fileID: 450548625}
   - component: {fileID: 450548627}
   - component: {fileID: 450548626}
+  - component: {fileID: 450548628}
   m_Layer: 5
   m_Name: Heart_8 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2210,6 +2533,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450548624}
   m_CullTransparentMesh: 1
+--- !u!114 &450548628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450548624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 68
 --- !u!1 &458050136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,9 +2557,10 @@ GameObject:
   - component: {fileID: 458050137}
   - component: {fileID: 458050139}
   - component: {fileID: 458050138}
+  - component: {fileID: 458050140}
   m_Layer: 5
   m_Name: Heart_5 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2285,6 +2622,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458050136}
   m_CullTransparentMesh: 1
+--- !u!114 &458050140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458050136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 35
 --- !u!1 &460226549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,9 +2646,10 @@ GameObject:
   - component: {fileID: 460226550}
   - component: {fileID: 460226552}
   - component: {fileID: 460226551}
+  - component: {fileID: 460226553}
   m_Layer: 5
   m_Name: Heart_7
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2360,6 +2711,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460226549}
   m_CullTransparentMesh: 1
+--- !u!114 &460226553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460226549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 7
 --- !u!1 &463460320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,9 +2735,10 @@ GameObject:
   - component: {fileID: 463460321}
   - component: {fileID: 463460323}
   - component: {fileID: 463460322}
+  - component: {fileID: 463460324}
   m_Layer: 5
   m_Name: Heart_7 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2435,6 +2800,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463460320}
   m_CullTransparentMesh: 1
+--- !u!114 &463460324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463460320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 77
 --- !u!1 &471237214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,9 +2824,10 @@ GameObject:
   - component: {fileID: 471237215}
   - component: {fileID: 471237217}
   - component: {fileID: 471237216}
+  - component: {fileID: 471237218}
   m_Layer: 5
   m_Name: Heart_9 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2510,6 +2889,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471237214}
   m_CullTransparentMesh: 1
+--- !u!114 &471237218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471237214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 49
 --- !u!1 &496233117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,9 +2949,10 @@ GameObject:
   - component: {fileID: 498034394}
   - component: {fileID: 498034396}
   - component: {fileID: 498034395}
+  - component: {fileID: 498034397}
   m_Layer: 5
   m_Name: Heart_9 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2621,6 +3014,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498034393}
   m_CullTransparentMesh: 1
+--- !u!114 &498034397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498034393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 89
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2776,9 +3182,10 @@ GameObject:
   - component: {fileID: 532716762}
   - component: {fileID: 532716764}
   - component: {fileID: 532716763}
+  - component: {fileID: 532716765}
   m_Layer: 5
   m_Name: Heart_5 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2840,6 +3247,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532716761}
   m_CullTransparentMesh: 1
+--- !u!114 &532716765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532716761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 85
 --- !u!1 &534199548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,9 +3271,10 @@ GameObject:
   - component: {fileID: 534199549}
   - component: {fileID: 534199551}
   - component: {fileID: 534199550}
+  - component: {fileID: 534199552}
   m_Layer: 5
   m_Name: Heart_3 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2915,6 +3336,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534199548}
   m_CullTransparentMesh: 1
+--- !u!114 &534199552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534199548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 43
 --- !u!1 &556402270
 GameObject:
   m_ObjectHideFlags: 0
@@ -2926,9 +3360,10 @@ GameObject:
   - component: {fileID: 556402271}
   - component: {fileID: 556402273}
   - component: {fileID: 556402272}
+  - component: {fileID: 556402274}
   m_Layer: 5
   m_Name: Heart_1 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2990,6 +3425,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556402270}
   m_CullTransparentMesh: 1
+--- !u!114 &556402274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556402270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 31
 --- !u!1 &582863288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,9 +3449,10 @@ GameObject:
   - component: {fileID: 582863289}
   - component: {fileID: 582863291}
   - component: {fileID: 582863290}
+  - component: {fileID: 582863292}
   m_Layer: 5
   m_Name: Heart_7 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3065,6 +3514,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582863288}
   m_CullTransparentMesh: 1
+--- !u!114 &582863292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582863288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 17
 --- !u!1 &593939424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,9 +3538,10 @@ GameObject:
   - component: {fileID: 593939425}
   - component: {fileID: 593939427}
   - component: {fileID: 593939426}
+  - component: {fileID: 593939428}
   m_Layer: 5
   m_Name: Heart_7 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3140,6 +3603,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593939424}
   m_CullTransparentMesh: 1
+--- !u!114 &593939428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593939424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 97
 --- !u!1 &600524991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,9 +3627,10 @@ GameObject:
   - component: {fileID: 600524992}
   - component: {fileID: 600524994}
   - component: {fileID: 600524993}
+  - component: {fileID: 600524995}
   m_Layer: 5
   m_Name: Heart_8 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3215,6 +3692,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600524991}
   m_CullTransparentMesh: 1
+--- !u!114 &600524995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600524991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 58
 --- !u!1 &602155579
 GameObject:
   m_ObjectHideFlags: 0
@@ -3226,9 +3716,10 @@ GameObject:
   - component: {fileID: 602155580}
   - component: {fileID: 602155582}
   - component: {fileID: 602155581}
+  - component: {fileID: 602155583}
   m_Layer: 5
   m_Name: Heart_5
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3290,6 +3781,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602155579}
   m_CullTransparentMesh: 1
+--- !u!114 &602155583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602155579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 5
 --- !u!1 &675090744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,9 +3805,10 @@ GameObject:
   - component: {fileID: 675090745}
   - component: {fileID: 675090747}
   - component: {fileID: 675090746}
+  - component: {fileID: 675090748}
   m_Layer: 5
   m_Name: Heart_10 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3365,6 +3870,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675090744}
   m_CullTransparentMesh: 1
+--- !u!114 &675090748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675090744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 50
 --- !u!1 &678613742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,9 +3894,10 @@ GameObject:
   - component: {fileID: 678613743}
   - component: {fileID: 678613745}
   - component: {fileID: 678613744}
+  - component: {fileID: 678613746}
   m_Layer: 5
   m_Name: Heart_6 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3440,6 +3959,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678613742}
   m_CullTransparentMesh: 1
+--- !u!114 &678613746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678613742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 66
 --- !u!1 &697290542
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,9 +3983,10 @@ GameObject:
   - component: {fileID: 697290543}
   - component: {fileID: 697290545}
   - component: {fileID: 697290544}
+  - component: {fileID: 697290546}
   m_Layer: 5
   m_Name: Heart_6 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3515,6 +4048,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697290542}
   m_CullTransparentMesh: 1
+--- !u!114 &697290546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697290542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 96
 --- !u!1 &718822920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3601,9 +4147,10 @@ GameObject:
   - component: {fileID: 722324096}
   - component: {fileID: 722324098}
   - component: {fileID: 722324097}
+  - component: {fileID: 722324099}
   m_Layer: 5
   m_Name: Heart_4 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3665,6 +4212,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722324095}
   m_CullTransparentMesh: 1
+--- !u!114 &722324099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722324095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 14
 --- !u!1 &749183929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,9 +4236,10 @@ GameObject:
   - component: {fileID: 749183930}
   - component: {fileID: 749183932}
   - component: {fileID: 749183931}
+  - component: {fileID: 749183933}
   m_Layer: 5
   m_Name: Heart_8 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3740,6 +4301,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749183929}
   m_CullTransparentMesh: 1
+--- !u!114 &749183933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749183929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 48
 --- !u!1 &819437980
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,9 +4325,10 @@ GameObject:
   - component: {fileID: 819437981}
   - component: {fileID: 819437983}
   - component: {fileID: 819437982}
+  - component: {fileID: 819437984}
   m_Layer: 5
   m_Name: Heart_4 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3815,6 +4390,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819437980}
   m_CullTransparentMesh: 1
+--- !u!114 &819437984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819437980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 64
 --- !u!1 &821224896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3857,9 +4445,10 @@ GameObject:
   - component: {fileID: 826203749}
   - component: {fileID: 826203751}
   - component: {fileID: 826203750}
+  - component: {fileID: 826203752}
   m_Layer: 5
   m_Name: Heart_9 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3921,6 +4510,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826203748}
   m_CullTransparentMesh: 1
+--- !u!114 &826203752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826203748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 29
 --- !u!1 &834857401
 GameObject:
   m_ObjectHideFlags: 0
@@ -3932,9 +4534,10 @@ GameObject:
   - component: {fileID: 834857402}
   - component: {fileID: 834857404}
   - component: {fileID: 834857403}
+  - component: {fileID: 834857405}
   m_Layer: 5
   m_Name: Heart_10 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3996,6 +4599,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834857401}
   m_CullTransparentMesh: 1
+--- !u!114 &834857405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834857401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 70
 --- !u!1 &844155368
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,9 +4623,10 @@ GameObject:
   - component: {fileID: 844155369}
   - component: {fileID: 844155371}
   - component: {fileID: 844155370}
+  - component: {fileID: 844155372}
   m_Layer: 5
   m_Name: Heart_3 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4071,6 +4688,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844155368}
   m_CullTransparentMesh: 1
+--- !u!114 &844155372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844155368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 53
 --- !u!1 &876202086
 GameObject:
   m_ObjectHideFlags: 0
@@ -4082,9 +4712,10 @@ GameObject:
   - component: {fileID: 876202087}
   - component: {fileID: 876202089}
   - component: {fileID: 876202088}
+  - component: {fileID: 876202090}
   m_Layer: 5
   m_Name: Heart_4 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4146,6 +4777,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876202086}
   m_CullTransparentMesh: 1
+--- !u!114 &876202090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876202086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 84
 --- !u!1 &883625838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4157,9 +4801,10 @@ GameObject:
   - component: {fileID: 883625839}
   - component: {fileID: 883625841}
   - component: {fileID: 883625840}
+  - component: {fileID: 883625842}
   m_Layer: 5
   m_Name: Heart_7 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4221,6 +4866,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883625838}
   m_CullTransparentMesh: 1
+--- !u!114 &883625842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883625838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 27
 --- !u!1 &884119499
 GameObject:
   m_ObjectHideFlags: 0
@@ -4232,9 +4890,10 @@ GameObject:
   - component: {fileID: 884119500}
   - component: {fileID: 884119502}
   - component: {fileID: 884119501}
+  - component: {fileID: 884119503}
   m_Layer: 5
   m_Name: Heart_10 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4296,6 +4955,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884119499}
   m_CullTransparentMesh: 1
+--- !u!114 &884119503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884119499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 20
 --- !u!1 &963240583
 GameObject:
   m_ObjectHideFlags: 0
@@ -4307,9 +4979,10 @@ GameObject:
   - component: {fileID: 963240584}
   - component: {fileID: 963240586}
   - component: {fileID: 963240585}
+  - component: {fileID: 963240587}
   m_Layer: 5
   m_Name: Heart_6 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4371,6 +5044,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963240583}
   m_CullTransparentMesh: 1
+--- !u!114 &963240587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963240583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 76
 --- !u!1 &971165183
 GameObject:
   m_ObjectHideFlags: 0
@@ -4382,9 +5068,10 @@ GameObject:
   - component: {fileID: 971165184}
   - component: {fileID: 971165186}
   - component: {fileID: 971165185}
+  - component: {fileID: 971165187}
   m_Layer: 5
   m_Name: Heart_5 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4446,6 +5133,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971165183}
   m_CullTransparentMesh: 1
+--- !u!114 &971165187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971165183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 25
 --- !u!1 &991189468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,9 +5225,10 @@ GameObject:
   - component: {fileID: 1019462375}
   - component: {fileID: 1019462377}
   - component: {fileID: 1019462376}
+  - component: {fileID: 1019462378}
   m_Layer: 5
   m_Name: Heart_10 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4589,6 +5290,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019462374}
   m_CullTransparentMesh: 1
+--- !u!114 &1019462378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019462374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 80
 --- !u!1 &1033433378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4734,9 +5448,10 @@ GameObject:
   - component: {fileID: 1036535738}
   - component: {fileID: 1036535740}
   - component: {fileID: 1036535739}
+  - component: {fileID: 1036535741}
   m_Layer: 5
   m_Name: Heart_2
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4798,6 +5513,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036535737}
   m_CullTransparentMesh: 1
+--- !u!114 &1036535741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036535737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 2
 --- !u!1 &1054452779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4809,9 +5537,10 @@ GameObject:
   - component: {fileID: 1054452780}
   - component: {fileID: 1054452782}
   - component: {fileID: 1054452781}
+  - component: {fileID: 1054452783}
   m_Layer: 5
   m_Name: Heart_2 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4873,6 +5602,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054452779}
   m_CullTransparentMesh: 1
+--- !u!114 &1054452783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054452779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 22
 --- !u!1 &1065293769
 GameObject:
   m_ObjectHideFlags: 0
@@ -4884,9 +5626,10 @@ GameObject:
   - component: {fileID: 1065293770}
   - component: {fileID: 1065293772}
   - component: {fileID: 1065293771}
+  - component: {fileID: 1065293773}
   m_Layer: 5
   m_Name: Heart_1
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4948,6 +5691,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065293769}
   m_CullTransparentMesh: 1
+--- !u!114 &1065293773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065293769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 1
 --- !u!1001 &1066408369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5033,9 +5789,10 @@ GameObject:
   - component: {fileID: 1120452032}
   - component: {fileID: 1120452034}
   - component: {fileID: 1120452033}
+  - component: {fileID: 1120452035}
   m_Layer: 5
   m_Name: Heart_6 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5097,6 +5854,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120452031}
   m_CullTransparentMesh: 1
+--- !u!114 &1120452035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120452031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 46
 --- !u!1 &1130068089
 GameObject:
   m_ObjectHideFlags: 0
@@ -5108,9 +5878,10 @@ GameObject:
   - component: {fileID: 1130068090}
   - component: {fileID: 1130068092}
   - component: {fileID: 1130068091}
+  - component: {fileID: 1130068093}
   m_Layer: 5
   m_Name: Heart_8 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5172,6 +5943,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130068089}
   m_CullTransparentMesh: 1
+--- !u!114 &1130068093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130068089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 38
 --- !u!1 &1140985635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5183,9 +5967,10 @@ GameObject:
   - component: {fileID: 1140985636}
   - component: {fileID: 1140985638}
   - component: {fileID: 1140985637}
+  - component: {fileID: 1140985639}
   m_Layer: 5
   m_Name: Heart_9 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5247,6 +6032,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140985635}
   m_CullTransparentMesh: 1
+--- !u!114 &1140985639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140985635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 69
 --- !u!1 &1170405758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5258,9 +6056,10 @@ GameObject:
   - component: {fileID: 1170405759}
   - component: {fileID: 1170405761}
   - component: {fileID: 1170405760}
+  - component: {fileID: 1170405762}
   m_Layer: 5
   m_Name: Heart_8 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5322,6 +6121,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170405758}
   m_CullTransparentMesh: 1
+--- !u!114 &1170405762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170405758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 28
 --- !u!1 &1178818736
 GameObject:
   m_ObjectHideFlags: 0
@@ -5333,9 +6145,10 @@ GameObject:
   - component: {fileID: 1178818737}
   - component: {fileID: 1178818739}
   - component: {fileID: 1178818738}
+  - component: {fileID: 1178818740}
   m_Layer: 5
   m_Name: Heart_1 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5397,6 +6210,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178818736}
   m_CullTransparentMesh: 1
+--- !u!114 &1178818740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178818736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 81
 --- !u!1001 &1180016776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5445,6 +6271,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4760339747687373671, guid: 3775713dd5463614e93e9791784dde12, type: 3}
+      propertyPath: healthManager
+      value: 
+      objectReference: {fileID: 1622626650}
     - target: {fileID: 5903102828631663745, guid: 3775713dd5463614e93e9791784dde12, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5587,9 +6417,10 @@ GameObject:
   - component: {fileID: 1194020725}
   - component: {fileID: 1194020727}
   - component: {fileID: 1194020726}
+  - component: {fileID: 1194020728}
   m_Layer: 5
   m_Name: Heart_10 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5651,6 +6482,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194020724}
   m_CullTransparentMesh: 1
+--- !u!114 &1194020728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194020724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 60
 --- !u!1 &1204126064
 GameObject:
   m_ObjectHideFlags: 0
@@ -5662,9 +6506,10 @@ GameObject:
   - component: {fileID: 1204126065}
   - component: {fileID: 1204126067}
   - component: {fileID: 1204126066}
+  - component: {fileID: 1204126068}
   m_Layer: 5
   m_Name: Heart_8 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5726,6 +6571,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204126064}
   m_CullTransparentMesh: 1
+--- !u!114 &1204126068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204126064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 78
 --- !u!1 &1212588112
 GameObject:
   m_ObjectHideFlags: 0
@@ -5737,9 +6595,10 @@ GameObject:
   - component: {fileID: 1212588113}
   - component: {fileID: 1212588115}
   - component: {fileID: 1212588114}
+  - component: {fileID: 1212588116}
   m_Layer: 5
   m_Name: Heart_4 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5801,6 +6660,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212588112}
   m_CullTransparentMesh: 1
+--- !u!114 &1212588116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212588112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 94
 --- !u!1 &1233150242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5812,9 +6684,10 @@ GameObject:
   - component: {fileID: 1233150243}
   - component: {fileID: 1233150245}
   - component: {fileID: 1233150244}
+  - component: {fileID: 1233150246}
   m_Layer: 5
   m_Name: Heart_10 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5876,6 +6749,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233150242}
   m_CullTransparentMesh: 1
+--- !u!114 &1233150246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233150242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 30
 --- !u!1 &1244048885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5887,9 +6773,10 @@ GameObject:
   - component: {fileID: 1244048886}
   - component: {fileID: 1244048888}
   - component: {fileID: 1244048887}
+  - component: {fileID: 1244048889}
   m_Layer: 5
   m_Name: Heart_1 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5951,6 +6838,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244048885}
   m_CullTransparentMesh: 1
+--- !u!114 &1244048889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244048885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 11
 --- !u!1 &1258147062
 GameObject:
   m_ObjectHideFlags: 0
@@ -5962,9 +6862,10 @@ GameObject:
   - component: {fileID: 1258147063}
   - component: {fileID: 1258147065}
   - component: {fileID: 1258147064}
+  - component: {fileID: 1258147066}
   m_Layer: 5
   m_Name: Heart_1 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6026,6 +6927,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258147062}
   m_CullTransparentMesh: 1
+--- !u!114 &1258147066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258147062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 61
 --- !u!1 &1333564866
 GameObject:
   m_ObjectHideFlags: 0
@@ -6037,9 +6951,10 @@ GameObject:
   - component: {fileID: 1333564867}
   - component: {fileID: 1333564869}
   - component: {fileID: 1333564868}
+  - component: {fileID: 1333564870}
   m_Layer: 5
   m_Name: Heart_8 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6101,6 +7016,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333564866}
   m_CullTransparentMesh: 1
+--- !u!114 &1333564870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333564866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 88
 --- !u!1 &1346673028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6112,9 +7040,10 @@ GameObject:
   - component: {fileID: 1346673029}
   - component: {fileID: 1346673031}
   - component: {fileID: 1346673030}
+  - component: {fileID: 1346673032}
   m_Layer: 5
   m_Name: Heart_2 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6176,6 +7105,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346673028}
   m_CullTransparentMesh: 1
+--- !u!114 &1346673032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346673028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 32
 --- !u!1 &1413723579
 GameObject:
   m_ObjectHideFlags: 0
@@ -6187,9 +7129,10 @@ GameObject:
   - component: {fileID: 1413723580}
   - component: {fileID: 1413723582}
   - component: {fileID: 1413723581}
+  - component: {fileID: 1413723583}
   m_Layer: 5
   m_Name: Heart_1 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6251,6 +7194,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413723579}
   m_CullTransparentMesh: 1
+--- !u!114 &1413723583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413723579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 41
 --- !u!1 &1465206796
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,9 +7348,10 @@ GameObject:
   - component: {fileID: 1467299273}
   - component: {fileID: 1467299275}
   - component: {fileID: 1467299274}
+  - component: {fileID: 1467299276}
   m_Layer: 5
   m_Name: Heart_10 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6456,6 +7413,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467299272}
   m_CullTransparentMesh: 1
+--- !u!114 &1467299276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467299272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 40
 --- !u!1001 &1487574359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6557,9 +7527,10 @@ GameObject:
   - component: {fileID: 1507970508}
   - component: {fileID: 1507970510}
   - component: {fileID: 1507970509}
+  - component: {fileID: 1507970511}
   m_Layer: 5
   m_Name: Heart_3 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6621,6 +7592,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507970507}
   m_CullTransparentMesh: 1
+--- !u!114 &1507970511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507970507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 83
 --- !u!1 &1542414148
 GameObject:
   m_ObjectHideFlags: 0
@@ -6632,9 +7616,10 @@ GameObject:
   - component: {fileID: 1542414149}
   - component: {fileID: 1542414151}
   - component: {fileID: 1542414150}
+  - component: {fileID: 1542414152}
   m_Layer: 5
   m_Name: Heart_2 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6696,6 +7681,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542414148}
   m_CullTransparentMesh: 1
+--- !u!114 &1542414152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542414148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 62
 --- !u!1 &1568551314
 GameObject:
   m_ObjectHideFlags: 0
@@ -6707,9 +7705,10 @@ GameObject:
   - component: {fileID: 1568551315}
   - component: {fileID: 1568551317}
   - component: {fileID: 1568551316}
+  - component: {fileID: 1568551318}
   m_Layer: 5
   m_Name: Heart_2 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6771,6 +7770,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568551314}
   m_CullTransparentMesh: 1
+--- !u!114 &1568551318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568551314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 82
 --- !u!1 &1571713895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6782,9 +7794,10 @@ GameObject:
   - component: {fileID: 1571713896}
   - component: {fileID: 1571713898}
   - component: {fileID: 1571713897}
+  - component: {fileID: 1571713899}
   m_Layer: 5
   m_Name: Heart_1 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6846,6 +7859,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571713895}
   m_CullTransparentMesh: 1
+--- !u!114 &1571713899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571713895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 51
 --- !u!1 &1575639923
 GameObject:
   m_ObjectHideFlags: 0
@@ -6857,9 +7883,10 @@ GameObject:
   - component: {fileID: 1575639924}
   - component: {fileID: 1575639926}
   - component: {fileID: 1575639925}
+  - component: {fileID: 1575639927}
   m_Layer: 5
   m_Name: Heart_3 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6921,6 +7948,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575639923}
   m_CullTransparentMesh: 1
+--- !u!114 &1575639927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575639923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 93
 --- !u!1 &1622626646
 GameObject:
   m_ObjectHideFlags: 0
@@ -6932,6 +7972,7 @@ GameObject:
   - component: {fileID: 1622626648}
   - component: {fileID: 1622626647}
   - component: {fileID: 1622626649}
+  - component: {fileID: 1622626650}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -6985,6 +8026,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e50653d8818c92c49b736d00e22e37be, type: 3}
   photoBackground: {fileID: 1687026781}
   textBox: {fileID: 1033433380}
+--- !u!114 &1622626650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622626646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5481b99fd13b94f853942aaec2f3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneBuildIndex: 0
 --- !u!1 &1638569311
 GameObject:
   m_ObjectHideFlags: 0
@@ -6996,9 +8050,10 @@ GameObject:
   - component: {fileID: 1638569312}
   - component: {fileID: 1638569314}
   - component: {fileID: 1638569313}
+  - component: {fileID: 1638569315}
   m_Layer: 5
   m_Name: Heart_5 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7060,6 +8115,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638569311}
   m_CullTransparentMesh: 1
+--- !u!114 &1638569315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638569311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 55
 --- !u!1 &1641481210
 GameObject:
   m_ObjectHideFlags: 0
@@ -7071,9 +8139,10 @@ GameObject:
   - component: {fileID: 1641481211}
   - component: {fileID: 1641481213}
   - component: {fileID: 1641481212}
+  - component: {fileID: 1641481214}
   m_Layer: 5
   m_Name: Heart_9
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7135,6 +8204,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641481210}
   m_CullTransparentMesh: 1
+--- !u!114 &1641481214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641481210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 9
 --- !u!1 &1683505038
 GameObject:
   m_ObjectHideFlags: 0
@@ -7146,9 +8228,10 @@ GameObject:
   - component: {fileID: 1683505039}
   - component: {fileID: 1683505041}
   - component: {fileID: 1683505040}
+  - component: {fileID: 1683505042}
   m_Layer: 5
   m_Name: Heart_8
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7210,6 +8293,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683505038}
   m_CullTransparentMesh: 1
+--- !u!114 &1683505042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683505038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 8
 --- !u!1 &1687026779
 GameObject:
   m_ObjectHideFlags: 0
@@ -7297,9 +8393,10 @@ GameObject:
   - component: {fileID: 1706296511}
   - component: {fileID: 1706296513}
   - component: {fileID: 1706296512}
+  - component: {fileID: 1706296514}
   m_Layer: 5
   m_Name: Heart_3 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7361,6 +8458,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706296510}
   m_CullTransparentMesh: 1
+--- !u!114 &1706296514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706296510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 63
 --- !u!1 &1706949585
 GameObject:
   m_ObjectHideFlags: 0
@@ -7372,9 +8482,10 @@ GameObject:
   - component: {fileID: 1706949586}
   - component: {fileID: 1706949588}
   - component: {fileID: 1706949587}
+  - component: {fileID: 1706949589}
   m_Layer: 5
   m_Name: Heart_10 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7436,6 +8547,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706949585}
   m_CullTransparentMesh: 1
+--- !u!114 &1706949589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706949585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 100
 --- !u!1 &1728140956
 GameObject:
   m_ObjectHideFlags: 0
@@ -7447,9 +8571,10 @@ GameObject:
   - component: {fileID: 1728140957}
   - component: {fileID: 1728140959}
   - component: {fileID: 1728140958}
+  - component: {fileID: 1728140960}
   m_Layer: 5
   m_Name: Heart_7 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7511,6 +8636,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728140956}
   m_CullTransparentMesh: 1
+--- !u!114 &1728140960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728140956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 87
 --- !u!1 &1731278511
 GameObject:
   m_ObjectHideFlags: 0
@@ -7522,9 +8660,10 @@ GameObject:
   - component: {fileID: 1731278512}
   - component: {fileID: 1731278514}
   - component: {fileID: 1731278513}
+  - component: {fileID: 1731278515}
   m_Layer: 5
   m_Name: Heart_3 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7586,6 +8725,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731278511}
   m_CullTransparentMesh: 1
+--- !u!114 &1731278515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731278511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 13
 --- !u!1 &1738213027
 GameObject:
   m_ObjectHideFlags: 0
@@ -7597,9 +8749,10 @@ GameObject:
   - component: {fileID: 1738213028}
   - component: {fileID: 1738213030}
   - component: {fileID: 1738213029}
+  - component: {fileID: 1738213031}
   m_Layer: 5
   m_Name: Heart_4 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7661,6 +8814,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738213027}
   m_CullTransparentMesh: 1
+--- !u!114 &1738213031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738213027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 74
 --- !u!1 &1754993478
 GameObject:
   m_ObjectHideFlags: 0
@@ -7672,9 +8838,10 @@ GameObject:
   - component: {fileID: 1754993479}
   - component: {fileID: 1754993481}
   - component: {fileID: 1754993480}
+  - component: {fileID: 1754993482}
   m_Layer: 5
   m_Name: Heart_2 (5)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7736,6 +8903,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754993478}
   m_CullTransparentMesh: 1
+--- !u!114 &1754993482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754993478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 52
 --- !u!1 &1784988618
 GameObject:
   m_ObjectHideFlags: 0
@@ -7747,9 +8927,10 @@ GameObject:
   - component: {fileID: 1784988619}
   - component: {fileID: 1784988621}
   - component: {fileID: 1784988620}
+  - component: {fileID: 1784988622}
   m_Layer: 5
   m_Name: Heart_5 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7811,6 +8992,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784988618}
   m_CullTransparentMesh: 1
+--- !u!114 &1784988622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784988618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 45
 --- !u!1 &1796988704
 GameObject:
   m_ObjectHideFlags: 0
@@ -7822,9 +9016,10 @@ GameObject:
   - component: {fileID: 1796988705}
   - component: {fileID: 1796988707}
   - component: {fileID: 1796988706}
+  - component: {fileID: 1796988708}
   m_Layer: 5
   m_Name: Heart_9 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7886,6 +9081,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796988704}
   m_CullTransparentMesh: 1
+--- !u!114 &1796988708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796988704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 79
 --- !u!1 &1798953652
 GameObject:
   m_ObjectHideFlags: 0
@@ -7897,9 +9105,10 @@ GameObject:
   - component: {fileID: 1798953653}
   - component: {fileID: 1798953655}
   - component: {fileID: 1798953654}
+  - component: {fileID: 1798953656}
   m_Layer: 5
   m_Name: Heart_4 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7961,6 +9170,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798953652}
   m_CullTransparentMesh: 1
+--- !u!114 &1798953656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798953652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 24
 --- !u!1 &1805018419
 GameObject:
   m_ObjectHideFlags: 0
@@ -7972,9 +9194,10 @@ GameObject:
   - component: {fileID: 1805018420}
   - component: {fileID: 1805018422}
   - component: {fileID: 1805018421}
+  - component: {fileID: 1805018423}
   m_Layer: 5
   m_Name: Heart_8 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8036,6 +9259,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805018419}
   m_CullTransparentMesh: 1
+--- !u!114 &1805018423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805018419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 18
 --- !u!1 &1834818292
 GameObject:
   m_ObjectHideFlags: 0
@@ -8047,9 +9283,10 @@ GameObject:
   - component: {fileID: 1834818293}
   - component: {fileID: 1834818295}
   - component: {fileID: 1834818294}
+  - component: {fileID: 1834818296}
   m_Layer: 5
   m_Name: Heart_2 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8111,6 +9348,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834818292}
   m_CullTransparentMesh: 1
+--- !u!114 &1834818296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834818292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 12
 --- !u!1 &1847366520
 GameObject:
   m_ObjectHideFlags: 0
@@ -8122,9 +9372,10 @@ GameObject:
   - component: {fileID: 1847366521}
   - component: {fileID: 1847366523}
   - component: {fileID: 1847366522}
+  - component: {fileID: 1847366524}
   m_Layer: 5
   m_Name: Heart_3
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8186,6 +9437,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847366520}
   m_CullTransparentMesh: 1
+--- !u!114 &1847366524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847366520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 3
 --- !u!1 &1849868422
 GameObject:
   m_ObjectHideFlags: 0
@@ -8197,9 +9461,10 @@ GameObject:
   - component: {fileID: 1849868423}
   - component: {fileID: 1849868425}
   - component: {fileID: 1849868424}
+  - component: {fileID: 1849868426}
   m_Layer: 5
   m_Name: Heart_3 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8261,6 +9526,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849868422}
   m_CullTransparentMesh: 1
+--- !u!114 &1849868426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849868422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 33
 --- !u!1 &1864957886
 GameObject:
   m_ObjectHideFlags: 0
@@ -8272,9 +9550,10 @@ GameObject:
   - component: {fileID: 1864957887}
   - component: {fileID: 1864957889}
   - component: {fileID: 1864957888}
+  - component: {fileID: 1864957890}
   m_Layer: 5
   m_Name: Heart_1 (9)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8336,6 +9615,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864957886}
   m_CullTransparentMesh: 1
+--- !u!114 &1864957890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864957886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 91
 --- !u!1 &1910752006
 GameObject:
   m_ObjectHideFlags: 0
@@ -8347,9 +9639,10 @@ GameObject:
   - component: {fileID: 1910752007}
   - component: {fileID: 1910752009}
   - component: {fileID: 1910752008}
+  - component: {fileID: 1910752010}
   m_Layer: 5
   m_Name: Heart_9 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8411,6 +9704,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910752006}
   m_CullTransparentMesh: 1
+--- !u!114 &1910752010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910752006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 39
 --- !u!1 &1919251765
 GameObject:
   m_ObjectHideFlags: 0
@@ -8679,9 +9985,10 @@ GameObject:
   - component: {fileID: 1936365277}
   - component: {fileID: 1936365279}
   - component: {fileID: 1936365278}
+  - component: {fileID: 1936365280}
   m_Layer: 5
   m_Name: Heart_5 (1)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8743,6 +10050,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936365276}
   m_CullTransparentMesh: 1
+--- !u!114 &1936365280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936365276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 15
 --- !u!1 &1951750753
 GameObject:
   m_ObjectHideFlags: 0
@@ -8754,9 +10074,10 @@ GameObject:
   - component: {fileID: 1951750754}
   - component: {fileID: 1951750756}
   - component: {fileID: 1951750755}
+  - component: {fileID: 1951750757}
   m_Layer: 5
   m_Name: Heart_2 (7)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8818,6 +10139,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951750753}
   m_CullTransparentMesh: 1
+--- !u!114 &1951750757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951750753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 72
 --- !u!1 &1960397878
 GameObject:
   m_ObjectHideFlags: 0
@@ -8829,9 +10163,10 @@ GameObject:
   - component: {fileID: 1960397879}
   - component: {fileID: 1960397881}
   - component: {fileID: 1960397880}
+  - component: {fileID: 1960397882}
   m_Layer: 5
   m_Name: Heart_6 (3)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8893,6 +10228,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960397878}
   m_CullTransparentMesh: 1
+--- !u!114 &1960397882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960397878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 36
 --- !u!1 &2034214025
 GameObject:
   m_ObjectHideFlags: 0
@@ -8904,9 +10252,10 @@ GameObject:
   - component: {fileID: 2034214026}
   - component: {fileID: 2034214028}
   - component: {fileID: 2034214027}
+  - component: {fileID: 2034214029}
   m_Layer: 5
   m_Name: Heart_6 (8)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8968,6 +10317,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034214025}
   m_CullTransparentMesh: 1
+--- !u!114 &2034214029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034214025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 86
 --- !u!4 &2040703176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4457307628100938684, guid: 3775713dd5463614e93e9791784dde12, type: 3}
@@ -8984,9 +10346,10 @@ GameObject:
   - component: {fileID: 2062888525}
   - component: {fileID: 2062888527}
   - component: {fileID: 2062888526}
+  - component: {fileID: 2062888528}
   m_Layer: 5
   m_Name: Heart_6
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9048,6 +10411,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062888524}
   m_CullTransparentMesh: 1
+--- !u!114 &2062888528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062888524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 6
 --- !u!1 &2068778836
 GameObject:
   m_ObjectHideFlags: 0
@@ -9059,9 +10435,10 @@ GameObject:
   - component: {fileID: 2068778837}
   - component: {fileID: 2068778839}
   - component: {fileID: 2068778838}
+  - component: {fileID: 2068778840}
   m_Layer: 5
   m_Name: Heart_4 (4)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9123,6 +10500,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068778836}
   m_CullTransparentMesh: 1
+--- !u!114 &2068778840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068778836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 44
 --- !u!1 &2086517716
 GameObject:
   m_ObjectHideFlags: 0
@@ -9134,9 +10524,10 @@ GameObject:
   - component: {fileID: 2086517717}
   - component: {fileID: 2086517719}
   - component: {fileID: 2086517718}
+  - component: {fileID: 2086517720}
   m_Layer: 5
   m_Name: Heart_5 (6)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9198,6 +10589,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2086517716}
   m_CullTransparentMesh: 1
+--- !u!114 &2086517720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086517716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 65
 --- !u!1 &2087876745
 GameObject:
   m_ObjectHideFlags: 0
@@ -9285,9 +10689,10 @@ GameObject:
   - component: {fileID: 2120802729}
   - component: {fileID: 2120802731}
   - component: {fileID: 2120802730}
+  - component: {fileID: 2120802732}
   m_Layer: 5
   m_Name: Heart_6 (2)
-  m_TagString: Untagged
+  m_TagString: Heart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9349,6 +10754,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120802728}
   m_CullTransparentMesh: 1
+--- !u!114 &2120802732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120802728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7e91b9ada1f448f64fb02f16d861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  place: 26
 --- !u!1001 &455993582794239894
 PrefabInstance:
   m_ObjectHideFlags: 0
