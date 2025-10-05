@@ -16,8 +16,12 @@ public class TransitionScript : MonoBehaviour
         if (other.tag == "Player")
         {
             print("Switching scene to " + SceneBuildIndex);
-
             SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
         }
     }
+
+
+
+
+
 }

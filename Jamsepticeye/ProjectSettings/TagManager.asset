@@ -8,7 +8,6 @@ TagManager:
   - Ground
   - Bullet
   - PlayerProjectile
-  - SpawnPoint
   layers:
   - Default
   - TransparentFX
