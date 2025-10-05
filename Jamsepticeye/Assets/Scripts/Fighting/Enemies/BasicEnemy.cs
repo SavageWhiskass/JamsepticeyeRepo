@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using UnityEngine;
+using System.Collections;
 
 public class BasicEnemy : Enemy
 {
@@ -23,15 +24,26 @@ public class BasicEnemy : Enemy
 
     void FixedUpdate()
     {
-        
+        if (player.position.x < transform.position.x)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
         Vector3 direction = (player.position - transform.position).normalized;
+        direction.y = 0;
+        direction.Normalize();
         transform.position += direction * speed * Time.deltaTime;
     }
 
-    void Attack()
+    IEnumerator Attack()
     {
         // Add animation start here
         attackCollider.enabled = true;
+        yield return new WaitForSeconds(1f);
+        attackCollider.enabled = false;
     }
 
     public override void OnAttackHit(Collider2D collision)
@@ -48,7 +60,7 @@ public class BasicEnemy : Enemy
         {
             if (attackCurrentCooldown <= 0f)
             {
-                Attack();
+                StartCoroutine(Attack());
                 attackCurrentCooldown = attack_cooldown;
             }
         }
