@@ -47,6 +47,11 @@ public class MovementScript : MonoBehaviour
 
     void Update()
     {
+        var playerStats = GetComponentInParent<PlayerStats>();
+        if (playerStats.triple_jump)
+        {
+            maxJumps = 3;
+        }
         //Check ground
         isGrounded = GroundCheck();
 
