@@ -15,9 +15,12 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] public int manaRegen = 1;
     float manaRegenCooldown = 1f;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public HealthManager healthManager;
 
 =======
+=======
+>>>>>>> Stashed changes
     Animator animator;
 
     // Start is called before the first frame update
@@ -44,7 +47,10 @@ public class PlayerStats : MonoBehaviour
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     public void ReduceCurrentHealth(int amount)
