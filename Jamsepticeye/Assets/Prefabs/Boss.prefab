@@ -40,12 +40,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1150573107300957006}
-  - component: {fileID: 4278407787049217897}
   - component: {fileID: 251157467401706835}
   - component: {fileID: 1790236057345703437}
-  - component: {fileID: 1065303214671927120}
+  - component: {fileID: 8542250882362061444}
+  - component: {fileID: 4224414275137585246}
   m_Layer: 0
-  m_Name: RangedEnemy
+  m_Name: Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,25 +68,6 @@ Transform:
   - {fileID: 6228536590610974600}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4278407787049217897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8235270837075712441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 257b232815294e543b71e04d26cf355a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 10
-  speed: 3
-  shooting_cooldown: 3
-  bulletPrefab: {fileID: 1953744427796686213, guid: 684307cb10cca54459cc85eed91c10e8, type: 3}
-  player: {fileID: 0}
-  range: 3
-  firePoint: {fileID: 6228536590610974600}
 --- !u!61 &251157467401706835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -119,7 +100,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00000011920929, y: 0.19850135}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -130,7 +111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6.1610355, y: 4.3203864}
   m_EdgeRadius: 0
 --- !u!50 &1790236057345703437
 Rigidbody2D:
@@ -144,7 +125,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -159,7 +140,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &1065303214671927120
+--- !u!114 &8542250882362061444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,6 +153,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 0}
+--- !u!114 &4224414275137585246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235270837075712441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d57b2c325d3d447aef2c33f155613c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 10
+  speed: 2
+  player: {fileID: 0}
+  attackCollider: {fileID: 0}
+  attack_cooldown: 3
+  dash_speed: 2
 --- !u!1 &9164851452362320183
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,8 +197,8 @@ Transform:
   m_GameObject: {fileID: 9164851452362320183}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.02, y: 0.186, z: 0}
+  m_LocalScale: {x: 6.13372, y: 4.3673964, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1150573107300957006}
