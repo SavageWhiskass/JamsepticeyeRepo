@@ -33,11 +33,14 @@ public class RangedEnemy : Enemy
 
         if (distance > range)
         {
+
             Vector3 direction = (player.position - transform.position).normalized;
+
             float step = speed * Time.fixedDeltaTime;
             float maxStep = distance - range;
             transform.position += direction * Mathf.Min(step, maxStep);
         }
+
     }
 
     void Update()
@@ -54,7 +57,6 @@ public class RangedEnemy : Enemy
     void Shoot()
     {
         Vector3 target = player.position;
-
 
         Vector3 direction = (target - firePoint.position).normalized;
 

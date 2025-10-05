@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - PlayerProjectile
   - SpawnPoint
+  - Heart
   layers:
   - Default
   - TransparentFX
