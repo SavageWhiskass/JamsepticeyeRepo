@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
@@ -9,70 +10,61 @@ public class HealthManager : MonoBehaviour
     int currentHealth = 3;
     public GameObject[] hearts;
     public GameObject player;
+    Color activeHeart;
+    Color hurtHeart;
+    Color disabledHeart;
 
     public int SceneBuildIndex;
 
+    private void Start()
+    {
+        activeHeart = Color.white;
+        hurtHeart = new Color(0.114f, 0.114f, 0.114f, 0.184f);
+        disabledHeart = new Color(0, 0, 0, 0);
+    }
 
     public void ReduceCurrentHealth(int amount)
     {
-        if ((currentHealth - amount) < 0)
+        for(int i = 0; i < amount; i++)
         {
-            currentHealth = 0;
-        }
-        else
-        {
-            currentHealth -= amount;
+            if(currentHealth >= 0)
+            {
+                hearts[currentHealth-1].GetComponent<Image>().color = hurtHeart;
+                --currentHealth;
+            }
         }
 
-        UpdateGUI();
         DeathCheck();
     }
 
     public void IncreaseCurrentHealth(int amount)
     {
-        if((currentHealth + amount) > maxHealth)
+        for (int i = 0; i < amount; i++)
         {
-            currentHealth = maxHealth;
+            if (currentHealth < maxHealth)
+            {
+                hearts[currentHealth].GetComponent<Image>().color = activeHeart;
+                ++currentHealth;
+            }
         }
-        else
-        {
-            currentHealth += amount;
-        }
-
-        UpdateGUI();
-        DeathCheck();
     }
 
-    void UpdateGUI()
+    public void IncreaseMaxHealth(int amount)
     {
-        //switch (currentHealth)
-        //{
-        //    case 0:
-        //        hearts[2].SetActive(false);
-        //        hearts[1].SetActive(false);
-        //        hearts[0].SetActive(false);
-        //        break;
-        //    case 1:
-        //        hearts[2].SetActive(false);
-        //        hearts[1].SetActive(false);
-        //        hearts[0].SetActive(true);
-        //        break;
-        //    case 2:
-        //        hearts[2].SetActive(false);
-        //        hearts[1].SetActive(true);
-        //        hearts[0].SetActive(true);
-        //        break;
-        //    case 3:
-        //        hearts[2].SetActive(true);
-        //        hearts[1].SetActive(true);
-        //        hearts[0].SetActive(true);
-        //        break;
-        //}
+        for (int i = 0; i < amount; i++)
+        {
+            if (maxHealth < 100)
+            {
+                hearts[maxHealth].GetComponent<Image>().color = hurtHeart;
+                ++maxHealth;
+                IncreaseCurrentHealth(1);
+            }
+        }
     }
 
     void DeathCheck()
     {
-        if(currentHealth == 0)
+        if(currentHealth <= 0)
         {
             print("Switching scene to " + SceneBuildIndex);
             SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
