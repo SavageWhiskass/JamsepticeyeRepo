@@ -1,5 +1,6 @@
 using System.Collections;
 using System.ComponentModel;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Boss : Enemy
@@ -7,14 +8,16 @@ public class Boss : Enemy
     [SerializeField] private float speed = 2f;
 
     private Rigidbody2D rb;
-    [SerializeField] private Transform player;
+    private Transform player;
     [SerializeField] private BoxCollider2D attackCollider;
     [SerializeField] private BoxCollider2D screamCollider;
     [SerializeField] private float attack_cooldown = 2f;
     [SerializeField] private float dash_speed = 10f;
     [SerializeField] private GameObject sludgePrefab;
-    private bool screaming = false;
+    Animator animator;
+    private bool attacking = false;
     float attackCurrentCooldown;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,6 +28,7 @@ public class Boss : Enemy
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -37,7 +41,7 @@ public class Boss : Enemy
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-        if (!screaming)
+        if (!attacking)
         {
             Vector3 direction = (player.position - transform.position).normalized;
             direction.y = 0;
@@ -48,29 +52,40 @@ public class Boss : Enemy
 
     IEnumerator Attack()
     {
+        animator.SetTrigger("slash");
+        yield return new WaitForSeconds(1f);
+        attackCollider.enabled = false;
+        attacking = false;
+    }
+
+    void TriggerAttack()
+    {
         attackCollider.enabled = true;
         for (int i = 0; i < 3; i++)
         {
             Instantiate(sludgePrefab, transform.position, Quaternion.identity);
         }
-        yield return new WaitForSeconds(1f);
-        attackCollider.enabled = false;
     }
 
     IEnumerator Scream()
     {
-        screaming = true;
-        screamCollider.enabled = true;
+        animator.SetTrigger("screech");
         yield return new WaitForSeconds(1f);
         screamCollider.enabled = false;
-        screaming = false;
+        attacking = false;
+    }
+
+    void TriggerScream()
+    {
+        screamCollider.enabled = true;
     }
 
     IEnumerator ScreamThenDash()
     {
         StartCoroutine(Scream());
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(Dash(0.5f, dash_speed / 2));
+        attacking = true;
+        yield return new WaitForSeconds(3f);
+        StartCoroutine(Dash(0.5f, dash_speed));
     }
 
     public override void OnAttackHit(Collider2D collision)
@@ -92,8 +107,9 @@ public class Boss : Enemy
         float distance = Vector3.Distance(player.position, transform.position);
         if (attackCurrentCooldown <= 0f)
         {
-            int randomAttack = UnityEngine.Random.Range(1, 4);
-            //int randomAttack = 1;
+            int randomAttack = Random.Range(1, 4);
+            attacking = true;
+
             switch (randomAttack){
                 case 1:
                     Debug.Log("DASH");
@@ -114,6 +130,9 @@ public class Boss : Enemy
 
     IEnumerator Dash(float dashTime, float dash_power)
     {
+        animator.SetTrigger("lunge");
+        yield return new WaitForSeconds(1f);
+
         Vector3 direction = (player.position - transform.position).normalized;
         direction.y = 0;
         direction.Normalize();
@@ -125,5 +144,6 @@ public class Boss : Enemy
             elapsed += Time.deltaTime;
             yield return null;
         }
+        attacking = false;
     }
 }
