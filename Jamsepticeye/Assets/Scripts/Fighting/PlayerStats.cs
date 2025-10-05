@@ -14,13 +14,8 @@ public class PlayerStats : MonoBehaviour
     public int currentMana = 100;
     [SerializeField] public int manaRegen = 1;
     float manaRegenCooldown = 1f;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     public HealthManager healthManager;
 
-=======
-=======
->>>>>>> Stashed changes
     Animator animator;
 
     // Start is called before the first frame update
@@ -28,7 +23,6 @@ public class PlayerStats : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
->>>>>>> Stashed changes
 
     // Update is called once per frame
     void Update()
@@ -46,13 +40,6 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     public void ReduceCurrentHealth(int amount)
     {
         DeathCheck(healthManager.ReduceCurrentHealth(amount));
