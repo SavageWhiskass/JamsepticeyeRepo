@@ -195,10 +195,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
-  speed: 2
-  shooting_cooldown: 3
-  bulletPrefab: {fileID: 0}
-  range: 5
+  speed: 4
+  shooting_cooldown: 1
+  bulletPrefab: {fileID: 4979693458314079468, guid: 2e7ff40c1e4aad140bd36a6cfafb0911, type: 3}
+  range: 7
   firePoint: {fileID: 2858801546757558509}
 --- !u!1 &5136228755049211884
 GameObject:
