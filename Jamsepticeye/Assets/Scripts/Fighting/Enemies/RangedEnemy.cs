@@ -64,7 +64,7 @@ public class RangedEnemy : Enemy
         Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
         GameObject newBullet = Instantiate(bulletPrefab, firePoint.position, rotation);
-        newBullet.GetComponent<Bullet>().Initialize(false);
+        newBullet.GetComponent<Bullet>().Initialize(false, 1);
     }
 
 }

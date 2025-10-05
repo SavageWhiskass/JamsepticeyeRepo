@@ -82,6 +82,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
+  healthUpgradePrefab: {fileID: 3095122090193366712, guid: d229de8cf50f33b419ea05dadd0653ec, type: 3}
+  manaUpgradePrefab: {fileID: 3095122090193366712, guid: 4e5f6ce2195189241becf9a751765206, type: 3}
+  manaRegenUpgradePrefab: {fileID: 3095122090193366712, guid: 8d7e2cdd506ff4b4e9224086b8168506, type: 3}
   speed: 2
   player: {fileID: 0}
   range: 2
