@@ -8,6 +8,7 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
     float horizontalInput;
+    public int knockbackInput;
     public float movespeed;
     Rigidbody2D rb;
     Animator animator;
@@ -90,18 +91,19 @@ public class MovementScript : MonoBehaviour
     {
         if(jumpEnabled && holdingJump && (isGrounded || jumpsLeft > 0) && jumpCooldown < 0.01f)
         {
-            rb.velocity = new Vector2(horizontalInput * movespeed, jumpPower);
+            rb.velocity = new Vector2((horizontalInput * movespeed), jumpPower);
             jumpEnabled = false;
             --jumpsLeft;
         }
         else if(!holdingJump && !isGrounded && rb.velocity.y > 0)
         {
-            rb.velocity = new Vector2(horizontalInput * movespeed, rb.velocity.y / 2);
+            rb.velocity = new Vector2((horizontalInput * movespeed), (rb.velocity.y / 2));
         }
         else
         {
-            rb.velocity = new Vector2(horizontalInput * movespeed, rb.velocity.y);
+            rb.velocity = new Vector2((horizontalInput * movespeed), rb.velocity.y);
         }
+
     }
 
     void Flipsprite()
