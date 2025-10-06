@@ -5,4 +5,9 @@ using UnityEngine;
 public class HeartIndex : MonoBehaviour
 {
     public int place;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 }

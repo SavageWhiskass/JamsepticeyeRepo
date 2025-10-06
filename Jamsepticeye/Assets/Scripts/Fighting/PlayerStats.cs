@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
     public int maxHealth = 3;
-    int currentHealth = 3;
+    public int currentHealth = 3;
     public int SceneBuildIndex;
     public int enemiesKilled = 0;
     public int maxMana = 100;
@@ -24,6 +24,20 @@ public class PlayerStats : MonoBehaviour
     public bool triple_jump = false;
     public bool has_shield = false;
     public bool has_big_blast = false;
+    public static PlayerStats Instance;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
     void Start()
@@ -69,6 +83,7 @@ public class PlayerStats : MonoBehaviour
 
     public void ReduceCurrentHealth(int amount)
     {
+        currentHealth = currentHealth - amount;
         if (shieldActive)
         {
             return;
@@ -78,11 +93,13 @@ public class PlayerStats : MonoBehaviour
 
     public void IncreaseCurrentHealth(int amount)
     {
+        currentHealth = currentHealth + amount;
         healthManager.IncreaseCurrentHealth(amount);
     }
 
     public void IncreaseMaxHealth(int amount)
     {
+        maxHealth = maxHealth + amount;
         healthManager.IncreaseMaxHealth(amount);
     }
 
@@ -96,10 +113,26 @@ public class PlayerStats : MonoBehaviour
     {
         if (isDead)
         {
-            print("Switching scene to " + SceneBuildIndex);
-            SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
-            currentHealth = maxHealth;
-            currentMana = maxMana;
+            if(SceneBuildIndex == 1)
+            {
+                currentMana = maxMana;
+                GetComponent<SpriteRenderer>().color = new Color(0.476f, 1, 0.984f, 0.509f);
+                print("Switching scene to " + SceneBuildIndex);
+                healthManager.IncreaseCurrentHealth(maxHealth);
+                SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
+                SceneBuildIndex = 4;
+                //healthManager = FindObjectOfType<HealthManager>();
+            }
+            else if (SceneBuildIndex == 4)
+            {
+                currentMana = maxMana;
+                GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+                print("Switching scene to " + SceneBuildIndex);
+                healthManager.IncreaseCurrentHealth(maxHealth);
+                SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
+                SceneBuildIndex = 1;
+                //healthManager = FindObjectOfType<HealthManager>();
+            }
         }
     }
 }

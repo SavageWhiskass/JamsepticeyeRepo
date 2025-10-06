@@ -40,10 +40,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1150573107300957006}
-  - component: {fileID: 4278407787049217897}
   - component: {fileID: 251157467401706835}
   - component: {fileID: 1790236057345703437}
   - component: {fileID: 1065303214671927120}
+  - component: {fileID: 2549632747457808075}
   m_Layer: 0
   m_Name: RangedEnemy
   m_TagString: Enemy
@@ -68,27 +68,6 @@ Transform:
   - {fileID: 6228536590610974600}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4278407787049217897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8235270837075712441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 257b232815294e543b71e04d26cf355a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 10
-  healthUpgradePrefab: {fileID: 3095122090193366712, guid: d229de8cf50f33b419ea05dadd0653ec, type: 3}
-  manaUpgradePrefab: {fileID: 3095122090193366712, guid: 4e5f6ce2195189241becf9a751765206, type: 3}
-  manaRegenUpgradePrefab: {fileID: 3095122090193366712, guid: 8d7e2cdd506ff4b4e9224086b8168506, type: 3}
-  speed: 3
-  shooting_cooldown: 3
-  bulletPrefab: {fileID: 1953744427796686213, guid: 684307cb10cca54459cc85eed91c10e8, type: 3}
-  range: 3
-  firePoint: {fileID: 6228536590610974600}
 --- !u!61 &251157467401706835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -121,7 +100,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.29178542, y: -0.35662657}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -132,7 +111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5835708, y: 2.4048934}
   m_EdgeRadius: 0
 --- !u!50 &1790236057345703437
 Rigidbody2D:
@@ -173,7 +152,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7765e5f532942574887170b812dee7a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 0}
+--- !u!114 &2549632747457808075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235270837075712441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267c244842901e743afcf86c8136a82c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 10
+  healthUpgradePrefab: {fileID: 3095122090193366712, guid: d229de8cf50f33b419ea05dadd0653ec, type: 3}
+  manaUpgradePrefab: {fileID: 3095122090193366712, guid: 4e5f6ce2195189241becf9a751765206, type: 3}
+  manaRegenUpgradePrefab: {fileID: 3095122090193366712, guid: 8d7e2cdd506ff4b4e9224086b8168506, type: 3}
+  speed: 2
+  shooting_cooldown: 5
+  bulletPrefab: {fileID: 1953744427796686213, guid: 684307cb10cca54459cc85eed91c10e8, type: 3}
+  player: {fileID: 0}
+  range: 5
+  firePoint: {fileID: 6228536590610974600}
 --- !u!1 &9164851452362320183
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,8 +247,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9339623, g: 0.14722276, b: 0.074893214, a: 1}
+  m_Sprite: {fileID: -105822306, guid: 8ee9ac3ffd661e54aa829262db9c66bb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

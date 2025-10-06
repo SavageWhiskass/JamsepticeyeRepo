@@ -21,9 +21,11 @@ public class BossAI : Enemy
 
     private void Start()
     {
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         attackCurrentCooldown = attackCooldown;
+        rb.drag = 1f;
     }
 
     void StopBoss()

@@ -15,13 +15,15 @@ public class TransitionScript : MonoBehaviour
 
         if (other.tag == "Player")
         {
+            var player = GameObject.FindWithTag("Player");
+            var stats = player.GetComponent<PlayerStats>();
+            stats.currentMana = stats.maxMana;
+            player.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
             print("Switching scene to " + SceneBuildIndex);
+            HealthManager healthManager = FindObjectOfType<HealthManager>();
+            healthManager.IncreaseCurrentHealth(stats.maxHealth);
+            SceneBuildIndex = 1;
             SceneManager.LoadScene(SceneBuildIndex, LoadSceneMode.Single);
         }
     }
-
-
-
-
-
 }

@@ -8,6 +8,7 @@ public class RangedEnemy : Enemy
     private Rigidbody2D rb;
     [SerializeField] private Transform player;
     [SerializeField] private float range = 5f;
+    private float detectionRange = 20f;
     public Transform firePoint;
     float fireCooldown;
     void Awake()
@@ -30,27 +31,30 @@ public class RangedEnemy : Enemy
     void FixedUpdate()
     {
         float distance = Vector3.Distance(player.position, transform.position);
+        if (distance <= detectionRange) {
+            if (distance > range)
+            {
+                Vector3 direction = (player.position - transform.position).normalized;
 
-        if (distance > range)
-        {
-
-            Vector3 direction = (player.position - transform.position).normalized;
-
-            float step = speed * Time.fixedDeltaTime;
-            float maxStep = distance - range;
-            transform.position += direction * Mathf.Min(step, maxStep);
+                float step = speed * Time.fixedDeltaTime;
+                float maxStep = distance - range;
+                transform.position += direction * Mathf.Min(step, maxStep);
+            }
         }
 
     }
 
     void Update()
     {
+        float distance = Vector3.Distance(player.position, transform.position);
         fireCooldown = fireCooldown - Time.deltaTime;
-
-        if (fireCooldown <= 0f)
+        if (distance <= detectionRange)
         {
-            Shoot();
-            fireCooldown = shooting_cooldown;
+            if (fireCooldown <= 0f)
+            {
+                Shoot();
+                fireCooldown = shooting_cooldown;
+            }
         }
     }
 

@@ -3,22 +3,24 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     [SerializeField] protected int hp = 10;
-    [SerializeField] private GameObject healthUpgradePrefab;
-    [SerializeField] private GameObject manaUpgradePrefab;
-    [SerializeField] private GameObject manaRegenUpgradePrefab;
+    private bool isDead = false;
+    [SerializeField] protected GameObject healthUpgradePrefab;
+    [SerializeField] protected GameObject manaUpgradePrefab;
+    [SerializeField] protected GameObject manaRegenUpgradePrefab;
 
     // All enemies share this behavior
     public virtual void TakeDamage(int damage)
     {
         hp -= damage;
-        if (hp <= 0)
+        if (hp <= 0 && !isDead)
         {
+            isDead = true;
             FindObjectOfType<PlayerStats>().RegisterKill();
-            Destroy(gameObject);
             if (this.GetType().Name != "Boss")
             {
-                int dropOrNot = UnityEngine.Random.Range(1, 101);
-                if(dropOrNot < 20)
+                Debug.Log("OWWW IM DEADDDD");
+                int dropOrNot = Random.Range(1, 101);
+                if(dropOrNot < 50)
                 {
                     int randomDrop = UnityEngine.Random.Range(1, 4);
                     //int randomAttack = 1;
@@ -36,6 +38,7 @@ public abstract class Enemy : MonoBehaviour
                     }
                 }
             }
+            Destroy(gameObject);
         }
     }
 

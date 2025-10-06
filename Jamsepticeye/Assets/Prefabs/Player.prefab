@@ -198,6 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ab21dca00c57e42ab57f1cae15dffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackInput: 0
   movespeed: 7
   jumpPower: 11
   maxJumps: 1
@@ -219,7 +220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7765e5f532942574887170b812dee7a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 0}
 --- !u!114 &6069829064389704528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1953744427796686213, guid: 684307cb10cca54459cc85eed91c10e8, type: 3}
+  powerBulletPrefab: {fileID: 0}
   firePoint: {fileID: 8241495225570794472}
 --- !u!114 &4760339747687373671
 MonoBehaviour:
@@ -364,7 +365,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.11320752, g: 0.103061564, b: 0.103061564, a: 0.64705884}
+  m_Color: {r: 0.45449585, g: 0.2794144, b: 0.6509434, a: 0.64705884}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
